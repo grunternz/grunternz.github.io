@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/* FONTS */
 
 @font-face {
     font-family: "Mentone";
@@ -23,35 +19,122 @@
     url('fonts/futuralt-webfont.woff'); /* IE */
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    font-family: Myriad Pro,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+.light {
+    font-weight: 400;
 }
+
+/* CORE DOCUMENT STYLES */
 
 html {
     width: 100%;
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 35px;
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #000;
+}
+
+hr {
+    border-color: #4e4e4e;
+    margin-bottom: 10px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+ul li.gallery {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+ul li img {
+    cursor: pointer;
+}
+
+li, p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+p {
+    line-height: 1.4;
+    font-size: 16px;
+    margin: 0 0 10px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+a {
+    color: #219ab3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #11505d;
+}
+
+/* ARTICLE STYLES */
+
+p.date {
+    font-size: 85%;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
     letter-spacing: 1px;
-    color: #d2d397;
+    color: #5e5e5e;
+    font-size: 10px;
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-align: right;
 }
 
-.project h3 {
-    margin: 0;
+h1.headline {
+    font: bold 48px "Century Schoolbook", Georgia, Times, serif;
+    color: #333;
+    line-height: 90%;
+    margin: .2em 0 .4em 0;
+    letter-spacing: -1px;
+    text-align: center;
 }
 
-.project p {
-    font-family: 'Open Sans', sans-serif;
+p.tag {
+    color: #5e5e5e;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin: 5px;
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    text-align: center;
 }
+
+p.article {
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.list-line-height {
+    line-height: 140%;
+}
+
+.list-undecorated {
+    list-style: none; 
+    padding: 0 0 0 20px;
+}
+
+/* PROJECT THUMBNAILS */
 
 .thumbnail {
     position: relative;
@@ -62,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thumbnail-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 10px;
 }
@@ -91,27 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 7%;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-}
-
-a {
-    color: #219ab3;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #11505d;
-}
-
-.light {
-    font-weight: 400;
-}
+/* NAVIGATION */
 
 .navbar-custom {
     margin-bottom: 0;
@@ -182,6 +245,8 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 }
+
+/* INTRODUCTION */
 
 .intro {
     font-family: Mentone;
@@ -307,6 +372,8 @@ a:focus {
     }
 }
 
+/* TO BE SORTED */
+
 .top-content-section {
     padding-top: 90px;
 }
@@ -318,7 +385,6 @@ a:focus {
 .work-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
     /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
     background-color: #000;
     -webkit-background-size: cover;

@@ -1,15 +1,63 @@
-<div class="project">
-	<h3>Goal</h3>
-	<p>As part of a team of six, we were tasked with creating a Java application over the course of a year that would aid writers in their creative process.</p>
+<div class="jumbotron">
+	<p class="date">Entire year, 2014</p>
+	<h1 class="headline">Software Engineering Group Project</h1>
+	<p class="tag">A self-oriented analysis of my contributions to the group project.</p>
+	<hr>
 
-	<h3>Process</h3>
-	<p>We were thrown into the deep end right from the start; expected to use an agile development cycle spanning through six sprints of varying length throughout the course of the year. We had a pre-determined list of features and requirements that our product owner (tutor) reguarly groomed and adjusted according to his tastes and desires. This grooming occured usually before however sometimes in conjunction with our sprint planning meetings due to the time constraints of the course. This allowed for a greater level of communication as both parties could weigh in at the same time. Every team member was expected and held accountable for keeping track of their time spent on various tasks. We made use of the open source Agilefant platform to not only document our time spent, but also break down stories into smaller more manageable tasks while also tracking our overall progression. Stand-up meetings were expected of us and as such a scrum master (tutor) was to stand in on one of the two required meetings per week, providing their advice while also helping remove any hinderances, and diffusing tension within the group.</p>
+	<h2>Goal</h2>
+	<p class="article">As part of a team of six, we were tasked with creating a Java application over the course of two semesters that would aid writers and the like in their creative process.</p>
 
-	<h3>Contributions</h3>
+	<h2>Process</h2>
+	<p class="article">Thrown into the deep end from the start, we were expected to use an agile development cycle spanning six sprints of varying lengths throughout the course of two semesters; breaks included. Assigned with a pre-determined list of features and requirements that our product owner reguarly groomed and adjusted according to his tastes, desires and our feedback as developers. Grooming usually occurred before each sprint planning meeting however sometimes it was conducted in conjunction with the planning meetings, especially earlier on as we were learning. This allowed for a greater level of communication as both parties could weigh in at the same time. Every team member was expected to and held accountable for keeping track of their time spent on various stories and tasks. We made use of the open source Agilefant platform to not only document our time spent, but also break down stories into smaller more specific and manageable tasks while also tracking our overall progression. Stand-up meetings were expected of us and as such a scrum master was to be a stand-in on half of the required meetings per week, providing their advice while also helping remove any hinderances, and diffusing tension within the group.</p>
 
-	<h3>Thoughts</h3>
+	<h2>Contributions</h2>
+	<h3>Sprint One</h3>
+	<p class="article">In our initial sprint we worked together to get the core framework of the application up and running before splitting off into smaller sub-groups to complete various tasks. My focus was getting rudimentary undo redo functionality working as it was a functional requirement for the project. In order to achieve this I made use of the memento pattern wherein the state of the application is dereferenced, serialised and stored on a stack whenever an undoable action occurs. The stack is then methodically manipulated to achieve the desired undo redo functionality.</p>
+	<p class="article">The module I wrote consisted of three main component parts; 
+	<ul class="list-line-height list-undecorated">
+		<li><b>Caretaker:</b> Manages a collection of previous Memento versions.</li>
+		<li><b>Originator:</b> Creates, assigns to, gets and sets Mementos.</li>
+		<li><b>Memento:</b> Object to be stored in difference states.</li>
+	</ul></p>
 
-	<h3>Gallery</h3>
+	<h3>Sprint Two</h3>
+	<p class="article">Junit tests for undo redo, UX: accelerators and mnemonics, looking into fest. throw low catch high, orthogonal tests, confined testing scope.</p>
+
+	<h3>Sprint Three</h3>
+	<p class="article">Comparators for list display, web look and feel, bug fixing</p>
+
+	<h3>Sprint Four</h3>
+	<p class="article">Recycle Bin, Status bar</p>
+
+	<h3>Sprint Five</h3>
+	<p class="article">JGraphX, getting the gui functionality working, implementing the sandbox, writing layout managers, gui buttons, perspectives</p>
+
+	<h3>Sprint Six</h3>
+	<p class="article">Major bug fixing, finding long known elusive bugs, gui icon overhaul</p>
+
+	<h2>Thoughts</h2>
+	<p class="article"></p>
+
+	<h2>Gallery</h2>
+	<div class="container">
+		<ul class="row">
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
+		</ul>
+	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">         
+                <div class="modal-body"></div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+	<hr>
+	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> First, solve the problem. Then, write the code. <sup><i class="fa fa-quote-right"></i></sup> — John Johnson</p>
 
 	<ul class="pager">
 		<li class="previous"><a href="{{ segpPrev }}">Home</a></li>
