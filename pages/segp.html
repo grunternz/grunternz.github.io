@@ -1,4 +1,8 @@
 <div class="jumbotron">
+	<ul class="pager">
+		<li class="previous"><a href="{{ segpPrev }}">Home</a></li>
+		<!--<li class="next"><a href="{{ segpNext }}">Next Project</a></li>-->
+	</ul>
 	<p class="date">Entire year, 2014</p>
 	<h1 class="headline">Software Engineering Group Project</h1>
 	<p class="tag">A self-oriented analysis of my contributions to the group project.</p>
@@ -8,11 +12,11 @@
 	<p class="article">As part of a team of six, we were tasked with creating a Java application over the course of two semesters that would aid writers and the like in their creative process.</p>
 
 	<h2>Process</h2>
-	<p class="article">Thrown into the deep end from the start, we were expected to use an agile development cycle spanning six sprints of varying lengths throughout the course of two semesters; breaks included. Assigned with a pre-determined list of features and requirements that our product owner reguarly groomed and adjusted according to his tastes, desires and our feedback as developers. Grooming usually occurred before each sprint planning meeting however sometimes it was conducted in conjunction with the planning meetings, especially earlier on as we were learning. This allowed for a greater level of communication as both parties could weigh in at the same time. Every team member was expected to and held accountable for keeping track of their time spent on various stories and tasks. We made use of the open source Agilefant platform to not only document our time spent, but also break down stories into smaller more specific and manageable tasks while also tracking our overall progression. Stand-up meetings were expected of us and as such a scrum master was to be a stand-in on half of the required meetings per week, providing their advice while also helping remove any hinderances, and diffusing tension within the group.</p>
+	<p class="article">Thrown into the deep end from the start, we were expected to use an agile development cycle spanning six sprints of varying lengths throughout the course of two semesters; breaks included. We were assigned with a pre-determined list of features and requirements that our product owner reguarly groomed and adjusted according to his tastes, desires and our feedback as developers. Grooming usually occurred before each sprint planning meeting however sometimes it was conducted in conjunction with the planning meetings, especially earlier on as we were still learning the process. This allowed for a greater level of communication as both parties could weigh in on any issues at the same time. Every team member was expected to and held accountable for keeping track of their time spent on various stories and tasks. We made use of the open source Agilefant platform to not only document our time spent, but also break down stories into smaller more specific and manageable tasks while also tracking our overall progression. Stand-up meetings were expected of us and as such a scrum master was to be a stand-in on half of the required meetings per week, providing their advice while also helping remove any hinderances, and diffusing tension within the group. At the end of every sprint, we stood in front of the other groups and gave a small presentation and demo of what we worked on and achieved up to that point.</p>
 
 	<h2>Contributions</h2>
 	<h3>Sprint One</h3>
-	<p class="article">In our initial sprint we worked together to get the core framework of the application up and running before splitting off into smaller sub-groups to complete various tasks. My focus was getting rudimentary undo redo functionality working as it was a functional requirement for the project. In order to achieve this I made use of the memento pattern wherein the state of the application is dereferenced, serialised and stored on a stack whenever an undoable action occurs. The stack is then methodically manipulated to achieve the desired undo redo functionality.</p>
+	<p class="article">In our initial sprint we worked together to get the core framework of the application up and running before splitting off into smaller sub-groups to complete various tasks. My focus was getting rudimentary undo redo functionality working as it was a functional requirement for the project. In order to achieve this I made use of the memento pattern wherein the state of the application is dereferenced, serialised and stored on a stack whenever an undoable action occurs. The stack is then methodically manipulated to achieve the desired undo redo functionality. <em>We were the only group with fully working undo redo functionality for the first two sprints.</em></p>
 	<p class="article">The module I wrote consisted of three main component parts; 
 	<ul class="list-line-height list-undecorated">
 		<li><b>Caretaker:</b> Manages a collection of previous Memento versions.</li>
@@ -21,46 +25,41 @@
 	</ul></p>
 
 	<h3>Sprint Two</h3>
-	<p class="article">Junit tests for undo redo, UX: accelerators and mnemonics, looking into fest. throw low catch high, orthogonal tests, confined testing scope.</p>
+	<p class="article">The importance of staying on top of our unit testing became more apparent as we entered into sprint two. We knew that we lacked tests coming out of sprint one, and it only became more apparent after receiving feedback. I took it upon myself to touch-up some loose ends by tidying up the undo redo module; fleshing it out with complete junit documentation and tests. When I wrote the module I was very particular with keeping it confined and separate from the rest of the application. This made writing the tests very straight forward, as the scope was clear and confined. For the remainder of this very short sprint, I worked in conjunction with another team member on the gui side of things to get key-stroke accelerators and menu mnemonics set up—we were expected to keep the program in a shipable state at the end of each sprint, so our user experience had to be kept to a certain standard. After this, I took a brief look into getting FEST (a form of automated user interface testing) working for future sprints, as we were not only expected to have proof of unit testing but also use-case testing.
 
 	<h3>Sprint Three</h3>
-	<p class="article">Comparators for list display, web look and feel, bug fixing</p>
+	<p class="article">As our code base grew larger and we added more and more functionality to the application, we began to realise how difficult it was working with such a limited set of user interface components. After seeing other teams adopt certain libraries for extending the swing interface, I managed to convince the remaining reluctant team members to allow us to slowly phase in the Web Look and Feel library. This library contains a myriad of useful components that we needed urgently, and in the future. I worked on slowly phasing the standard swing components out on our pre-existing user interface. After the majority of this was done, I researched into comparators in order to get our list displays ordering according to specific criterion. As the sprint drew to an end, the remainder of my time and effort was spent in an attempt to track down one elusive bug in particular that was heavily affecting the flow of our application; in certain situations</p>
 
 	<h3>Sprint Four</h3>
-	<p class="article">Recycle Bin, Status bar</p>
+	<p class="article">There was quite a lot of new and interesting functionality being introduced this sprint, including a status bar story I had proposed to the product owner. The story was to his liking and was to be adopted after I flesehd out some acceptance critera for it. The other significant story was that of the recycling bin. Letting our users manipulate and delete their plot elements wasn't enough, we had to maintain discarded items behind the scenes should they ever want to retrieve them. I worked in close conjunction with one other team member over the course of countless late nights in Erskine. We came up with an elegant solution for the recycling bin and status bar that tied in beautifully with the existing undo redo functionality after only a few minor adjustments to the module. Whenever an undoable action was carried out, we specified what type of action was carried out by the use of an external enumerable. This information was stored within the Memento that was stored on the undo redo stack. Having this information readily available made it a breeze to display in the status bar, giving the user immediate feedback on what was going on as they traversed the undo redo stack. The status bar was to provide feedback application wide, not just for undo redo, so naturally we worked on expanding it further to account for all actions we saw fit, including any negative outcomes should they ever arrise. We also introduced revert functionality, allowing the user to revert back to their last saved state. This was very straight forward, and only required a mere pointer to keep track of their last saved state on the undo redo stack.</p>
 
 	<h3>Sprint Five</h3>
-	<p class="article">JGraphX, getting the gui functionality working, implementing the sandbox, writing layout managers, gui buttons, perspectives</p>
+	<p class="article">Coming soon</p>
+	<!--<p class="article">JGraphX, getting the gui functionality working, implementing the sandbox, writing layout managers, gui buttons, perspectives</p>-->
 
 	<h3>Sprint Six</h3>
-	<p class="article">Major bug fixing, finding long known elusive bugs, gui icon overhaul</p>
+	<p class="article">Coming soon</p>
+	<!--<p class="article">Major bug fixing, finding long known elusive bugs, gui icon overhaul</p>-->
 
-	<h2>Thoughts</h2>
-	<p class="article"></p>
+	<h2>Reflection</h2>
+	<p class="article">Coming soon</p>
 
 	<h2>Gallery</h2>
-	<div class="container">
-		<ul class="row">
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4 gallery"><img class= "img-responsive" src="img/dog.jpg"/></li>
-		</ul>
-	</div>
+	<p class="article">Coming soon</p>
 
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">         
-                <div class="modal-body"></div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+	<h2>Resources and Acknowledgements</h2>
+	<ul class="list-line-height list-undecorated">
+		<li><a href="http://agilefant.com/">Agilefant</a></li>
+		<li><a href="http://weblookandfeel.com/">Web Look and Feel</a></li>
+		<li><a href="https://github.com/jgraph/jgraphx">JGraphX</a></li>
+		<li>I'd like to thank all the tutors for putting up with us throughout the course; through all the ups and downs. It was a great learning experience!</li>
+	</ul>
 
 	<hr>
 	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> First, solve the problem. Then, write the code. <sup><i class="fa fa-quote-right"></i></sup> — John Johnson</p>
 
 	<ul class="pager">
 		<li class="previous"><a href="{{ segpPrev }}">Home</a></li>
-		<li class="next"><a href="{{ segpNext }}">Next Project</a></li>
+		<!--<li class="next"><a href="{{ segpNext }}">Next Project</a></li>-->
 	</ul>
 </div>

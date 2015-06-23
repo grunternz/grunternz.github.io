@@ -60,26 +60,26 @@ ceoApp.controller('workController', function($scope) {
 	$scope.segpNext = "#ux-group-project";
 	
 	$scope.uxgp = "uxgp";
-	$scope.uxgpThumb = "img/work/uxgp-thumb.jpg";
+	$scope.uxgpThumb = "img/work/uxgp-thumb-uc.jpg";
 	$scope.uxgpPrev = "#seng-group-project";
 	$scope.uxgpNext = "#single-page-app";
 
 	$scope.spa = "spa";
-	$scope.spaThumb = "img/work/spa-thumb.jpg";
+	$scope.spaThumb = "img/work/spa-thumb-uc.jpg";
 	$scope.spaPrev = "#ux-group-project";
 	$scope.spaNext = "#ray-tracing";
 
 	$scope.rt = "rt";
-	$scope.rtThumb = "img/work/rt-thumb.jpg";
+	$scope.rtThumb = "img/work/rt-thumb-uc.jpg";
 	$scope.rtPrev = "#single-page-app";
 	$scope.rtNext = "#3d-design";
 
 	$scope.threedd = "3dd";
-	$scope.threeddThumb = "img/work/3dd-thumb.jpg";
+	$scope.threeddThumb = "img/work/3dd-thumb-uc.jpg";
 	$scope.threeddPrev = "#ray-tracing";
 	$scope.threeddNext = "#art-design-portfolio";
 
 	$scope.adp = "adp";
-	$scope.adpThumb = "img/work/adp-thumb.jpg";
+	$scope.adpThumb = "img/work/adp-thumb-uc.jpg";
 	$scope.adpPrev = "#3d-design";
 });
