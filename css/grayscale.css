@@ -92,6 +92,10 @@ a:hover, a:focus {
     color: #11505d;
 }
 
+img.w3chtml5 {
+    margin-top: 50px;
+}
+
 /* ARTICLE STYLES */
 
 p.date {
@@ -414,13 +418,16 @@ p.article {
 
 .work-section {
     width: 100%;
-    padding: 50px 0;
     /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.gapped {
+    padding-bottom: 15px;
 }
 
 .btn {

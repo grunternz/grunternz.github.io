@@ -56,25 +56,25 @@ ceoApp.config(function($routeProvider) {
 ceoApp.controller('workController', function($scope) {
 	$scope.segp = "segp";
 	$scope.segpThumb = "img/work/segp-thumb.jpg";
-	$scope.segpGallery00 = "img/work/segp/segp-screens_0000_elements_scratch.jpg";
+	$scope.segpGallery00 = "http://i.imgur.com/Bb2XcG2.jpg";
 	$scope.segpGallery00Title = "Some plot elements and the scratch pad.";
-	$scope.segpGallery01 = "img/work/segp/segp-screens_0001_linked_to_node.jpg";
+	$scope.segpGallery01 = "http://i.imgur.com/cihVTQ0.jpg";
 	$scope.segpGallery01Title = "A plot element associated with a plotnode."
-	$scope.segpGallery02 = "img/work/segp/segp-screens_0002_sequence_creation.jpg";
+	$scope.segpGallery02 = "http://i.imgur.com/kVYVEzq.jpg";
 	$scope.segpGallery02Title = "A sequence of plotnodes."
-	$scope.segpGallery03 = "img/work/segp/segp-screens_0003_sequence_browser.jpg";
+	$scope.segpGallery03 = "http://i.imgur.com/HJHLEaX.jpg";
 	$scope.segpGallery03Title = "The sequence browser."
-	$scope.segpGallery04 = "img/work/segp/segp-screens_0004_file_menu.jpg";
+	$scope.segpGallery04 = "http://i.imgur.com/5qp9wLR.jpg";
 	$scope.segpGallery04Title = "File menu."
-	$scope.segpGallery05 = "img/work/segp/segp-screens_0005_recycle_bin.jpg";
+	$scope.segpGallery05 = "http://i.imgur.com/OxWPV4w.jpg";
 	$scope.segpGallery05Title = "Recycling bin."
-	$scope.segpGallery06 = "img/work/segp/segp-screens_0006_macro_creation.jpg";
+	$scope.segpGallery06 = "http://i.imgur.com/hGmd8Li.jpg";
 	$scope.segpGallery06Title = "Macro creation."
-	$scope.segpGallery07 = "img/work/segp/segp-screens_0007_graphical_perspective.jpg";
+	$scope.segpGallery07 = "http://i.imgur.com/pjksA0m.jpg";
 	$scope.segpGallery07Title = "Graphical perspective."
-	$scope.segpGallery08 = "img/work/segp/segp-screens_0008_zoom.jpg";
+	$scope.segpGallery08 = "http://i.imgur.com/PNFKdPU.jpg";
 	$scope.segpGallery08Title = "Zoom functionality; stepped or mouse wheel controlled."
-	$scope.segpPrev = "#";
+	$scope.segpPrev = "#work";
 	$scope.segpNext = "#ux-group-project";
 	
 	$scope.uxgp = "uxgp";

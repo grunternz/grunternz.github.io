@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ceoApp">
+<html data-ng-app="ceoApp">
 
 <head>
     <meta charset="utf-8">
@@ -34,7 +34,7 @@
 
 </head>
 
-<body ng-controller="workController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body data-ng-controller="workController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -73,7 +73,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Welcome</h1>
                         <h2 class="brand-sub-heading">I'm Colin</h2>
-                        <p class="intro-text">I make cool stuff,  check it out below.</span></p>
+                        <p class="intro-text">I make cool stuff; check it out below.</p>
                         <a href="#work" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -96,9 +96,9 @@
     <!-- Work -->
     <section id="work" class="container content-section">
         <div class="work-section">
-            <h2 class="white text-center">My Work</h2>
+            <h2 class="white text-center gapped">My Work</h2>
             <div id="main">
-                <div ng-view></div>
+                <div data-ng-view></div>
             </div>
         </div>
     </section>    
@@ -122,6 +122,9 @@
     <footer>
         <div class="container text-center">
             <p class="white">Copyright &copy; Colin O'Brien 2015</p>
+            <a href="http://www.w3.org/TR/html/"><img class="w3chtml5" src="img/icons/HTML5_Badge_64.png" width="64" height="64" alt="HTML5 Powered and Validated" title="HTML5 Powered and Validated"></a>
+            <a href="http://www.w3schools.com/css/css3_intro.asp"><img class="w3chtml5" src="img/icons/CSS3_Badge_64.png" width="64" height="64" alt="Styled with CSS3" title="Styled with CSS3"></a>
+            <a href="https://angularjs.org/"><img class="w3chtml5" src="img/icons/AngularJS_Badge_64.png" width="64" height="64" alt="Built with AngularJS" title="Built with AngularJS"></a>
         </div>
     </footer>
 
