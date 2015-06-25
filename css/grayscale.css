@@ -23,6 +23,9 @@
     font-weight: 400;
 }
 
+.code {
+    font-family: 'Inconsolata';
+}
 /* CORE DOCUMENT STYLES */
 
 html {

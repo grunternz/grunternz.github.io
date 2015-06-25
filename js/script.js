@@ -54,7 +54,6 @@ ceoApp.config(function($routeProvider) {
 });
 
 ceoApp.controller('workController', function($scope) {
-	$scope.segp = "segp";
 	$scope.segpThumb = "img/work/segp-thumb.jpg";
 	$scope.segpGallery00 = "http://i.imgur.com/Bb2XcG2.jpg";
 	$scope.segpGallery00Title = "Some plot elements and the scratch pad.";
@@ -75,7 +74,7 @@ ceoApp.controller('workController', function($scope) {
 	$scope.segpGallery08 = "http://i.imgur.com/PNFKdPU.jpg";
 	$scope.segpGallery08Title = "Zoom functionality; stepped or mouse wheel controlled."
 	$scope.segpPrev = "#work";
-	$scope.segpNext = "#ux-group-project";
+	$scope.segpNext = "#ray-tracing";
 	
 	$scope.uxgp = "uxgp";
 	$scope.uxgpThumb = "img/work/uxgp-thumb-uc.jpg";
@@ -87,9 +86,12 @@ ceoApp.controller('workController', function($scope) {
 	$scope.spaPrev = "#ux-group-project";
 	$scope.spaNext = "#ray-tracing";
 
-	$scope.rt = "rt";
-	$scope.rtThumb = "img/work/rt-thumb-uc.jpg";
-	$scope.rtPrev = "#single-page-app";
+	$scope.rtThumb = "img/work/rt-thumb.jpg";
+	$scope.rtGallery00 = "img/work/rt/rt-Raytracing.png";
+	$scope.rtGallery00Title = "Anti-aliasing disabled. Render time: 4.6 seconds on the university lab computers.";
+	$scope.rtGallery01 = "img/work/rt/rt-Raytracing-Supersampled.png";
+	$scope.rtGallery01Title = "Anti-aliasing enabled. Render time: 18.2 seconds on the university lab computers.";
+	$scope.rtPrev = "#seng-group-project";
 	$scope.rtNext = "#3d-design";
 
 	$scope.threedd = "3dd";
