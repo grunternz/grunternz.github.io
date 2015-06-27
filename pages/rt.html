@@ -19,7 +19,7 @@
 	<h2>Participating Media</h2>
 	<p class="article">In order to achieve a subtle fog effect within the scene, the pixel colour returned from every ray that intersects an object is gradually blended more and more with the background colour based on the distance of the intersection from the camera, and some arbitrary fall-off value. The following calculation was performed on each colour channel (red, green and blue represented as c below) of the pixel;</p>
 
-	<p class="article well code">colorSum.c = backgroundColor+((falloff-q.point.length)*(colorSum.c-backgroundColor)) / falloff</p>
+	<p class="article well code">colorSum.c = backgroundColor+((falloff-q.point.length)*(colorSum.c-backgroundColor)) / falloff;</p>
 
 	<h2>Refraction</h2>
 	<p class="article">Implementing refraction certainly gave me more headaches than anything else in this assignment. To achieve this feature, when the primary ray intersects an object that is refracting light, I calculated the refracted ray at the point of intersection based on the normal for that point. I then proceeded to trace the refracted ray until it intersected the object again at the ray’s exit point. To calculate this next refracted ray, we need to invert the normal at the exit point on the object, after which the final refracted ray can be calculated. Below follow the formulae I used when calculating refractions within my scene.</p>
