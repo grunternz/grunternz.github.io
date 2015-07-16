@@ -137,17 +137,67 @@ p.article {
     margin-top: -2px;
 }
 
+dl dd.article {
+    line-height: 1.4;
+    font-size: 16px;
+    margin-top: -2px;
+    margin-bottom: 20px;
+}
+
+dl dd.list-item {
+    line-height: 1.4;
+    font-size: 16px;
+    margin-top: -2px;
+    margin-left: 20px;
+}
+
+dl dt.heading {
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #5e5e5e;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
 .list-line-height {
     line-height: 140%;
 }
 
 .list-undecorated {
     list-style: none; 
-    padding: 0 0 0 25px;
 }
 
 .gallery {
     padding-bottom: 25px;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
 }
 
 .example-image-link {
@@ -291,7 +341,7 @@ p.article {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(http://i.imgur.com/bDmzAnQ.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;

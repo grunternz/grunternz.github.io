@@ -1,6 +1,148 @@
-<p>{{ uxgp }}</p>
+<div class="jumbotron">
+	<ul class="pager">
+		<li class="previous"><a href="{{ uxgpPrev }}">Previous Project</a></li>
+		<li class="next"><a href="{{ uxgpNext }}">Next Project</a></li>
+	</ul>
+	<p class="date">COSC368: Humans and Computers, Semester two, 2014</p>
+	<h1 class="headline">UX Group Project</h1>
+	<p class="tag">An analysis of the foundation my group designed for the creation of a mobile ride sharing application.</p>
+	<hr>
 
-<ul class="pager">
-	<li class="previous"><a href="{{ uxgpPrev }}">Previous Project</a></li>
-	<li class="next"><a href="{{ uxgpNext }}">Next Project</a></li>
-</ul>
+	<h2>Process</h2>
+	<p class="article">Over the course of a semester, myself and four others were tasked with working together to design the foundation for the creation of a system of our choice. After much deliberation we decided to move forward with the idea of a mobile ride sharing application, called Ryde. Throughout the course we cumulatively compiled our efforts to produce the following product, which was reflected in a thirty-eight page report.</p>
+
+	<h2>Concept Statement</h2>
+	<p class="article">Ryde is a mobile ride sharing application that helps drivers and passengers who are attending the same events quickly and easily organise shared transport. Users can be drivers and or passengers; drivers can list vacant seats and send out invites to friends, or allow passengers to apply to fill these vacancies. Passengers can apply to fill a specific seat or just grab a ride with anyone who will have them. Drivers and passengers can also have one-on-one chats or car-group chats so everyone is kept up to date with any details regarding the trip.</p>
+	<blockquote><p>Ryde will simplify the organisation of shared transport so that users can focus less on how to get there, and more on what to do there.</p></blockquote>
+
+	<h2>Research</h2>
+	<h3>Contextual Inquiry</h3>
+	<p class="article">Conducting research was a key component in the design of Ryde. An electronic survey was created which every team member distributed via different forms of social media. The survey consisted of various differing types of questions concerning respondents' demographics, transportation habits, and event culture. Below are a few questions taken from the survey.
+		<ul class="list-line-height list-undecorated">
+			<li>If you organise group events, how do you go about doing so?</li>
+			<li>What is the most challenging aspect of organising transportation?</li>
+			<li>If you carpool, how are drivers chosen?</li>
+		</ul>
+	</p>
+
+	<h3>Work Activity</h3>
+	<p class="article">Utilising the results from our survey, we analysed the responses in order to better define 'Work Roles' before subsequently creating our 'Work Affinity Diagram' wherein we identified and grouped similar responses under common categories. Below are the work roles we identified.
+		<dl class="list-line-height">
+			<dt class="heading">Organisers</dt>
+				<dd class="article">Organise or host events.</dd>
+			<dt class="heading">Drivers</dt>
+				<dd class="article">Those who are driving or offer to drive to events.</dd>
+			<dt class="heading">Passengers</dt>
+				<dd class="article">People who need transportation to events.</dd>
+		</dl>
+	</p>
+
+	<p class="article">Following are just a few responses that have been grouped into some of the many categories which we identified in our 'Work Affinity Diagram'.
+		<dl class="list-line-height">
+			<dt class="heading">Timing</dt>
+				<dd class="list-item article">"It is challenging to get the timing right of everyone involved."</dd>
+			<dt class="heading">Finding Drivers</dt>
+				<dd class="list-item">"I find it challenging having too many passengers and not enough drivers."</dd>
+				<dd class="list-item article">"Sometimes it is hard to find a ride home at the end of an event."</dd>
+			<dt class="heading">Coordination</dt>
+				<dd class="list-item">"Sometimes there are misunderstandings communicating information between passengers and drivers."</dd>
+				<dd class="list-item">"There are times where I need to organise rides not only for myself, but for others too."</dd>
+		</dl>
+	</p>
+
+	<h2>Design Guidelines</h2>
+	<p class="article">
+		<dl class="list-line-height">
+			<dt class="heading">Optimise Interactions for Immediate Use</dt>
+				<dd class="article">We wanted the use of Ryde to be a fast and fluid experience; users should be able to perform tasks quickly and with a minimal number of interactions.</dd>
+			<dt class="heading">Minimise Textual Input</dt>
+				<dd class="article">All Ryde features should be quick and easy to use; textual input is difficult and more time consuming with small devices, making it inefficient and also more prone to cause user error.</dd>
+			<dt class="heading">Concise Output</dt>
+				<dd class="article">Ryde displays a lot of important details on the screen at once, particularly when concerning events. This information needs to be concise, not only so the user can easily identify which output is relevant to them, but also to reduce clutter and maintain readability.</dd>
+			<dt class="heading">Conform to Platform Conventions</dt>
+				<dd class="article">As Ryde is a mobile application, users expect it to conform to certain pre-existing conventions. This is important, as making Ryde more consistent with other applications will increase ease of use and learnability.</dd>
+			<dt class="heading">Control Cognitive Affordance</dt>
+				<dd class="article">Users should be made aware of, and be able to easily locate and interact with cognitive affordances. Effective layout, organisation and grouping is essential to achieve this, especially so when working with mobile devices as users are often interacting on the go, with limited screen space.</dd>
+		</dl>
+	</p>
+
+	<blockquote><p>Ryde is like a Facebook event—but for the organisation of shared transportation.</p></blockquote>
+	
+	<h2>Prototyping</h2>
+	<h3>Logos and Icons</h3>
+	<p class="article">When we set out to design our logo and consequently our brand, we ideated over several sessions until reaching the following results which we felt best represented our application. The top candidates were further adjusted wherever necessary before being fleshed out as potentially shippable logos or icons. Our main concern came down to recognition over recall and given the time constraints imposed on us at each stage of development, I am happy with the results.</p>
+	<div class="container">
+		<div class="row list-undecorated">
+			<li class="col-md-6"><a class="example-image-link" href="{{ uxgpLogo00 }}" data-lightbox="uxgpLogos" data-title="{{ uxgpLogo00Title }}"><img class="img-responsive example-image" src="{{ uxgpLogo00 }}"/></a></li>
+			<li class="col-md-6"><a class="example-image-link" href="{{ uxgpLogo01 }}" data-lightbox="uxgpLogos" data-title="{{ uxgpLogo01Title }}"><img class="img-responsive example-image" src="{{ uxgpLogo01 }}"/></a></li>
+		</div>
+		<div class="row list-undecorated">
+			<li class="col-md-4"><a class="example-image-link" href="{{ uxgpLogo02 }}" data-lightbox="uxgpLogos" data-title="{{ uxgpLogo02Title }}"><img class="img-responsive example-image" src="{{ uxgpLogo02 }}"/></a></li>
+			<li class="col-md-4"><a class="example-image-link" href="{{ uxgpLogo03 }}" data-lightbox="uxgpLogos" data-title="{{ uxgpLogo03Title }}"><img class="img-responsive example-image" src="{{ uxgpLogo03 }}"/></a></li>
+			<li class="col-md-4"><a class="example-image-link" href="{{ uxgpLogo04 }}" data-lightbox="uxgpLogos" data-title="{{ uxgpLogo04Title }}"><img class="img-responsive example-image" src="{{ uxgpLogo04 }}"/></a></li>
+		</div>
+	</div>
+	
+	<h3>Low Fidelity</h3>
+	<p class = "article">As part of our design process we were required to mock-up a low fidelity prototype that would be used during the labs, by other groups assuming the role of potential users. A complete functional mock-up was not required at this stage, however what we did chose to implement had to be robust enough to withstand the demo sessions. We decided to use a web based mocking application known as Balsamiq for this purpose, as it allowed us to avoid clutter and collaborate when we weren't physically in the same room together.</p>
+	<p class = "article">Staying true to our design guidelines and conforming to platform conventions, we decided to implement a slide-out menu as part of our design. This is accessible via the <i class="fa fa-bars"></i>  icon  located in the top left of the events screen. Here the user can see the currently logged in account, jump to specific sections of the application directly, choose to alter the settings of the application itself or logout entirely. We decided our application would integrate with Facebook, pulling events from there should the user choose to do so; due to this, we based our event page design heavily on Facebook's own event layout. This conformity increased usability as the users were presented with a familiar layout; this in turn reduced the learning curve.</p>
+	<div class="container">
+		<div class="row row-centered list-undecorated">
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ uxgpLowFid00 }}" data-lightbox="uxgpLowFid" data-title="{{ uxgpLowFid00Title }}"><img class="img-responsive example-image" src="{{ uxgpLowFid00 }}"/></a></li>
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ uxgpLowFid01 }}" data-lightbox="uxgpLowFid" data-title="{{ uxgpLowFid01Title }}"><img class="img-responsive example-image" src="{{ uxgpLowFid01 }}"/></a></li>
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ uxgpLowFid02 }}" data-lightbox="uxgpLowFid" data-title="{{ uxgpLowFid02Title }}"><img class="img-responsive example-image" src="{{ uxgpLowFid02 }}"/></a></li>
+		</div>
+	</div>
+	
+	<h3>High Fidelity</h3>
+	<p class="article">Towards the end of the course, we were to come up with a more functional high fidelity prototype using what we had learned from the feedback we received on the low fidelity prototype. We decided to build our high fidelity prototype as a mobile website utilisting HTML, CSS, JavaScript, PHP and an SQL server acting as our persistent storage. This allowed us to create a highly interactive prototype which looked and felt a lot more like what the final product would. It also allowed us to demo the application on a smart phone during our demo sessions, which was a step above every other group. Combined with our evaluation plan, we were able to utilise our high fidelity prototype to elicit meaningful responses and feedback from our users.</p>
+	<div class="container">
+		<div class="row list-undecorated">
+			<li class="col-md-3"><a class="example-image-link" href="{{ uxgpHighFid00 }}" data-lightbox="uxgpHighFid" data-title="{{ uxgpHighFid00Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFid00 }}"/></a></li>
+			<li class="col-md-3"><a class="example-image-link" href="{{ uxgpHighFid01 }}" data-lightbox="uxgpHighFid" data-title="{{ uxgpHighFid01Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFid01 }}"/></a></li>
+			<li class="col-md-3"><a class="example-image-link" href="{{ uxgpHighFid02 }}" data-lightbox="uxgpHighFid" data-title="{{ uxgpHighFid02Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFid02 }}"/></a></li>
+			<li class="col-md-3"><a class="example-image-link" href="{{ uxgpHighFid03 }}" data-lightbox="uxgpHighFid" data-title="{{ uxgpHighFid03Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFid03 }}"/></a></li>
+		</div>
+	</div>
+
+	<h3>Feedback Based Improvements</h3>
+	<p class="article">We noticed several users had difficulty importing events as they could not find the appropriate button (the <i class="fa fa-plus"></i> located in the top right of the events screen). In every case of this occurring, the user looked in the slide-out menu. To cater for this, we added a direct link to importing events in the slide-out menu which definitely saw more use in our subsequent demo sessions. Furthermore, several users were confused with the terminology we had previously used on our low fidelity prototype. We added more labels where appropriate, and modified existing ones to be more specific.</p>
+
+	<p class="article">Some users expressed confusion when interacting with the toggle buttons on the offer vehicle screen; they assumed all four buttons were part of the same group when they were in fact two separate groups. To reinforce this separation, we visually changed the styling to reflect there being two distinct groups. Users were still hesitant with this form due to the ambiguity of the terms; their meaning and purpose were not clearly communicated. To address this, we added question mark buttons adjacent to each group of buttons. Pressing these buttons caused pop-up notifications to display brief descriptions of each term in the context of the application. We had far less issues with our final demo run, after the implementation of these very few adjustments.</p>
+	<div class="container">
+		<div class="row row-centered list-undecorated">
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ uxgpHighFidChanges00 }}" data-lightbox="uxgpHighFidChanges" data-title="{{ uxgpHighFidChanges00Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFidChanges00 }}"/></a></li>
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ uxgpHighFidChanges01 }}" data-lightbox="uxgpHighFidChanges" data-title="{{ uxgpHighFidChanges01Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFidChanges01 }}"/></a></li>
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ uxgpHighFidChanges02 }}" data-lightbox="uxgpHighFidChanges" data-title="{{ uxgpHighFidChanges02Title }}"><img class="img-responsive example-image" src="{{ uxgpHighFidChanges02 }}"/></a></li>
+		</div>
+	</div>
+
+	<h2>Reflection</h2>
+	<p class="article">UX Design is a challenging area of work, with many unexpected setbacks along the way. It's an iterative process—you're bound to revisit and improve upon designs throughout the course of development, right from low fidelity through to an already shipped product. The result of a carefully designed product is one that is robust and caters the ideal end user experience. While having said that, it became very apparent to us that the design is never fully finished; there's always room for improvement or refinement. This wasn't clear to us early in the course, but as things moved along it became more obvious that the design is never finished. There is always more you can do to improve the user experience.</p>
+	<p class="article">As with any group project, communication is paramount. Working with your friends is great, and it just so happens that we are all organised and punctual—enough—to get through the course without any major conflicts. Making sure the team is informed of crucial decisions is important, so everyone can contribute in the design process; we did our best to always be co-located when working on the project to ensure we had complete input however whenever this wasn't an option, we communicated to the best of our ability through other means such as social media.</p>
+
+	<h2>Resources and Acknowledgements</h2>
+	<p class="article">
+		<ul class="list-line-height list-undecorated">
+			<li><a href="https://balsamiq.com/">Balsamiq</a></li>
+		</ul>
+	</p>
+
+	<p class="article">I'd like to give a shout out and a huge thank you to my team mates!
+		<dl class="list-line-height">
+			<dt class="heading"><a target="_blank" href="http://jono.glassey.co.nz/">Jonathan Glassey</a></dt>
+			<dt class="heading">Michael Steenkamp</dt>
+			<dt class="heading">George Woodham</dt>
+			<dt class="heading"><a target="_blank" href="http://justinzhang.co.nz/">Justin Zhang</a></dt>
+		</dl>
+	</p>
+
+
+	<hr>
+	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> Simplicity is the ultimate sophistication. <sup><i class="fa fa-quote-right"></i></sup> — Leonardo da Vinci</p>
+
+	<ul class="pager">
+		<li class="previous"><a href="{{ uxgpPrev }}">Previous Project</a></li>
+		<li class="next"><a href="{{ uxgpNext }}">Next Project</a></li>
+	</ul>
+</div>
