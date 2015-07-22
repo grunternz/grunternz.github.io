@@ -127,9 +127,9 @@ ceoApp.controller('workController', function($scope) {
 	$scope.rtPrev = "#ux-group-project";
 	$scope.rtNext = "#3d-design";
 
-	$scope.rtGallery00 = "img/work/rt/rt-Raytracing.png";
+	$scope.rtGallery00 = "http://i.imgur.com/oLoflk7.png";
 	$scope.rtGallery00Title = "Anti-aliasing disabled. Render time: 4.6 seconds on the university lab computers.";
-	$scope.rtGallery01 = "img/work/rt/rt-Raytracing-Supersampled.png";
+	$scope.rtGallery01 = "http://i.imgur.com/dZXXgyr.png";
 	$scope.rtGallery01Title = "Anti-aliasing enabled. Render time: 18.2 seconds on the university lab computers.";
 
 	// ******************* 3DD *******************

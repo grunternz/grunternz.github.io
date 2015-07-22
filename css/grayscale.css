@@ -80,7 +80,9 @@ p {
 }
 
 .white {
-    color: white;
+    color: #DDDDDD;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
 }
 
 a {
@@ -266,7 +268,7 @@ blockquote p {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #333;
 }
 
 .navbar-custom .navbar-brand {
@@ -341,8 +343,7 @@ blockquote p {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(http://i.imgur.com/bDmzAnQ.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background: url(http://i.imgur.com/4YSiAfR.png) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -472,7 +473,6 @@ blockquote p {
 .work-section {
     width: 100%;
     /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
-    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
