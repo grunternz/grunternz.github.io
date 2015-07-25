@@ -217,6 +217,7 @@ blockquote p {
 
 .example-image {
   border-radius: 4px; 
+  overflow: hidden;
 }
 
 /* PROJECT THUMBNAILS */
