@@ -101,37 +101,52 @@ ceoApp.controller('workController', function($scope) {
 	$scope.uxgpNext = "#ray-tracing";
 
 	$scope.uxgpLogo00 = "http://i.imgur.com/3QWsWVQ.jpg";
+	$scope.uxgpLogo00Thumb = "http://i.imgur.com/3QWsWVQm.jpg";
 	$scope.uxgpLogo00Title = "Draft of Ryde logo.";
 	$scope.uxgpLogo01 = "http://i.imgur.com/oIkLThu.png";
+	$scope.uxgpLogo01Thumb = "http://i.imgur.com/oIkLThum.png";
 	$scope.uxgpLogo01Title = "Final Ryde logo.";
 	$scope.uxgpLogo02 = "http://i.imgur.com/gshSA6Q.jpg";
+	$scope.uxgpLogo02Thumb = "http://i.imgur.com/gshSA6Qm.jpg";
 	$scope.uxgpLogo02Title = "Draft of a potential icon for Ryde.";
 	$scope.uxgpLogo03 = "http://i.imgur.com/p0Jht70.jpg";
+	$scope.uxgpLogo03Thumb = "http://i.imgur.com/p0Jht70m.jpg";
 	$scope.uxgpLogo03Title = "Draft of another potential icon for Ryde.";
 	$scope.uxgpLogo04 = "http://i.imgur.com/8lvnskK.png";
+	$scope.uxgpLogo04Thumb = "http://i.imgur.com/8lvnskKm.png";
 	$scope.uxgpLogo04Title = "Final Ryde icon.";
 
 	$scope.uxgpLowFid00 = "http://i.imgur.com/rgC1zKu.png";
+	$scope.uxgpLowFid00Thumb = "http://i.imgur.com/rgC1zKum.png";
 	$scope.uxgpLowFid00Title = "Low fidelity slide-out menu prototype.";
 	$scope.uxgpLowFid01 = "http://i.imgur.com/xQ8rQ4e.png";
+	$scope.uxgpLowFid01Thumb = "http://i.imgur.com/xQ8rQ4em.png";
 	$scope.uxgpLowFid01Title = "Low fidelity event page prototype."
 	$scope.uxgpLowFid02 = "http://i.imgur.com/Piry6hk.png";
+	$scope.uxgpLowFid02Thumb = "http://i.imgur.com/Piry6hkm.png";
 	$scope.uxgpLowFid02Title = "Low fidelity prototype of the form for listing a car in an event."
 
 	$scope.uxgpHighFid00 = "http://i.imgur.com/Flzzyz5.png";
+	$scope.uxgpHighFid00Thumb = "http://i.imgur.com/Flzzyz5m.png";
 	$scope.uxgpHighFid00Title = "Events screen.";
 	$scope.uxgpHighFid01 = "http://i.imgur.com/R2I4ufF.png";
+	$scope.uxgpHighFid01Thumb = "http://i.imgur.com/R2I4ufFm.png";
 	$scope.uxgpHighFid01Title = "Slide-out navigation menu.";
 	$scope.uxgpHighFid02 = "http://i.imgur.com/gl4xkdb.png";
+	$scope.uxgpHighFid02Thumb = "http://i.imgur.com/gl4xkdbm.png";
 	$scope.uxgpHighFid02Title = "COSC Paintball event screen.";
 	$scope.uxgpHighFid03 = "http://i.imgur.com/UJA4GqE.png";
+	$scope.uxgpHighFid03Thumb = "http://i.imgur.com/UJA4GqEm.png";
 	$scope.uxgpHighFid03Title = "Offer Vehicle form.";
 	
 	$scope.uxgpHighFidChanges00 = "http://i.imgur.com/R7HpmON.png";
+	$scope.uxgpHighFidChanges00Thumb = "http://i.imgur.com/R7HpmONm.png";
 	$scope.uxgpHighFidChanges00Title = "Updated Offer Vehicle form, with distinctly grouped buttons.";
 	$scope.uxgpHighFidChanges01 = "http://i.imgur.com/ArLv4dd.png";
+	$scope.uxgpHighFidChanges01Thumb = "http://i.imgur.com/ArLv4ddm.png";
 	$scope.uxgpHighFidChanges01Title = "Revised Offer Vehicle form, with question mark buttons.";
 	$scope.uxgpHighFidChanges02 = "http://i.imgur.com/AfA43FR.png";
+	$scope.uxgpHighFidChanges02Thumb = "http://i.imgur.com/AfA43FRm.png";
 	$scope.uxgpHighFidChanges02Title = "The 'Help' dialog that appears when the question mark button to the right of the Pickup button is pressed.";
 
 	// ******************* SPA *******************
@@ -160,51 +175,51 @@ ceoApp.controller('workController', function($scope) {
 	$scope.adpPrev = "#ray-tracing";
 
 	$scope.adpGallery00 = "http://i.imgur.com/Z8gsseD.jpg";
-	$scope.adpGallery00Thumb = "http://i.imgur.com/Z8gsseDl.jpg";
+	$scope.adpGallery00Thumb = "http://i.imgur.com/Z8gsseDm.jpg";
 	$scope.adpGallery00Title = "Panel 1.1: Cover development.";
 
 	$scope.adpGallery01 = "http://i.imgur.com/6PCy6NI.jpg";
-	$scope.adpGallery01Thumb = "http://i.imgur.com/6PCy6NIl.jpg";
+	$scope.adpGallery01Thumb = "http://i.imgur.com/6PCy6NIm.jpg";
 	$scope.adpGallery01Title = "Panel 1.2: Logo development.";
 
 	$scope.adpGallery02 = "http://i.imgur.com/k907HbJ.jpg";
-	$scope.adpGallery02Thumb = "http://i.imgur.com/k907HbJl.jpg";
+	$scope.adpGallery02Thumb = "http://i.imgur.com/k907HbJm.jpg";
 	$scope.adpGallery02Title = "Panel 1.3: Cover development continued.";
 
 	$scope.adpGallery03 = "http://i.imgur.com/rtnYwIu.jpg";
-	$scope.adpGallery03Thumb = "http://i.imgur.com/rtnYwIul.jpg";
+	$scope.adpGallery03Thumb = "http://i.imgur.com/rtnYwIum.jpg";
 	$scope.adpGallery03Title = "Panel 1.4: Final cover.";
 
 	$scope.adpGallery04 = "http://i.imgur.com/PgI8ve2.jpg";
-	$scope.adpGallery04Thumb = "http://i.imgur.com/PgI8ve2l.jpg";
+	$scope.adpGallery04Thumb = "http://i.imgur.com/PgI8ve2m.jpg";
 	$scope.adpGallery04Title = "Panel 2.1: Deck, wheel & double page spread development.";
 
 	$scope.adpGallery05 = "http://i.imgur.com/QOMYBJq.jpg";
-	$scope.adpGallery05Thumb = "http://i.imgur.com/QOMYBJql.jpg";
+	$scope.adpGallery05Thumb = "http://i.imgur.com/QOMYBJqm.jpg";
 	$scope.adpGallery05Title = "Panel 2.2: Contents page development.";
 
 	$scope.adpGallery06 = "http://i.imgur.com/4prO65I.jpg";
-	$scope.adpGallery06Thumb = "http://i.imgur.com/4prO65Il.jpg";
+	$scope.adpGallery06Thumb = "http://i.imgur.com/4prO65Im.jpg";
 	$scope.adpGallery06Title = "Panel 2.3: Double page spread & gallery development.";
 
 	$scope.adpGallery07 = "http://i.imgur.com/v9nT2Re.jpg";
-	$scope.adpGallery07Thumb = "http://i.imgur.com/v9nT2Rel.jpg";
+	$scope.adpGallery07Thumb = "http://i.imgur.com/v9nT2Rem.jpg";
 	$scope.adpGallery07Title = "Panel 2.4: Final double page spread & gallery.";
 
 	$scope.adpGallery08 = "http://i.imgur.com/wGFYE6A.jpg";
-	$scope.adpGallery08Thumb = "http://i.imgur.com/wGFYE6Al.jpg";
+	$scope.adpGallery08Thumb = "http://i.imgur.com/wGFYE6Am.jpg";
 	$scope.adpGallery08Title = "Panel 3.1: Deck promotional poster development.";
 
 	$scope.adpGallery09 = "http://i.imgur.com/giFgQun.jpg";
-	$scope.adpGallery09Thumb = "http://i.imgur.com/giFgQunl.jpg";
+	$scope.adpGallery09Thumb = "http://i.imgur.com/giFgQunm.jpg";
 	$scope.adpGallery09Title = "Panel 3.2: Final promotional poster.";
 
 	$scope.adpGallery10 = "http://i.imgur.com/kza0iGx.jpg";
-	$scope.adpGallery10Thumb = "http://i.imgur.com/kza0iGxl.jpg";
+	$scope.adpGallery10Thumb = "http://i.imgur.com/kza0iGxm.jpg";
 	$scope.adpGallery10Title = "Panel 3.3: Event promotional poster development.";
 
 	$scope.adpGallery11 = "http://i.imgur.com/vGncRk3.jpg";
-	$scope.adpGallery11Thumb = "http://i.imgur.com/vGncRk3l.jpg";
+	$scope.adpGallery11Thumb = "http://i.imgur.com/vGncRk3m.jpg";
 	$scope.adpGallery11Title = "Panel 3.4: Final event promotional poster.";
 
 	$scope.adpGallery12 = "http://i.imgur.com/UkJwc2M.jpg";
