@@ -39,7 +39,7 @@ ceoApp.config(function($routeProvider) {
 		})
 
 		.when('/art-design-portfolio', {
-			templateUrl : 'pages/adp.html',
+			templateUrl : 'pages/art.html',
 			controller  : 'workController'
 		})
 
@@ -101,10 +101,10 @@ ceoApp.controller('workController', function($scope) {
 	$scope.uxgpNext = "#ray-tracing";
 
 	$scope.uxgpLogo00 = "http://i.imgur.com/3QWsWVQ.jpg";
-	$scope.uxgpLogo00Thumb = "http://i.imgur.com/3QWsWVQm.jpg";
+	$scope.uxgpLogo00Thumb = "http://i.imgur.com/F8fWgiJ.png";
 	$scope.uxgpLogo00Title = "Draft of Ryde logo.";
 	$scope.uxgpLogo01 = "http://i.imgur.com/oIkLThu.png";
-	$scope.uxgpLogo01Thumb = "http://i.imgur.com/oIkLThum.png";
+	$scope.uxgpLogo01Thumb = "http://i.imgur.com/YAD0zD1.png";
 	$scope.uxgpLogo01Title = "Final Ryde logo.";
 	$scope.uxgpLogo02 = "http://i.imgur.com/gshSA6Q.jpg";
 	$scope.uxgpLogo02Thumb = "http://i.imgur.com/gshSA6Qm.jpg";
@@ -113,7 +113,7 @@ ceoApp.controller('workController', function($scope) {
 	$scope.uxgpLogo03Thumb = "http://i.imgur.com/p0Jht70m.jpg";
 	$scope.uxgpLogo03Title = "Draft of another potential icon for Ryde.";
 	$scope.uxgpLogo04 = "http://i.imgur.com/8lvnskK.png";
-	$scope.uxgpLogo04Thumb = "http://i.imgur.com/8lvnskKm.png";
+	$scope.uxgpLogo04Thumb = "http://i.imgur.com/xvvasqT.png";
 	$scope.uxgpLogo04Title = "Final Ryde icon.";
 
 	$scope.uxgpLowFid00 = "http://i.imgur.com/rgC1zKu.png";
@@ -160,8 +160,10 @@ ceoApp.controller('workController', function($scope) {
 	$scope.rtNext = "#art-design-portfolio";
 
 	$scope.rtGallery00 = "http://i.imgur.com/oLoflk7.png";
+	$scope.rtGallery00Thumb = "http://i.imgur.com/oLoflk7m.png";
 	$scope.rtGallery00Title = "Anti-aliasing disabled. Render time: 4.6 seconds on the university lab computers.";
 	$scope.rtGallery01 = "http://i.imgur.com/dZXXgyr.png";
+	$scope.rtGallery01Thumb = "http://i.imgur.com/dZXXgyrm.png";
 	$scope.rtGallery01Title = "Anti-aliasing enabled. Render time: 18.2 seconds on the university lab computers.";
 
 	// ******************* 3DD *******************
