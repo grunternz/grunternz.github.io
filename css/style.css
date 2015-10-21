@@ -103,6 +103,11 @@ img.w3chtml5 {
 
 /* ARTICLE STYLES */
 
+li.home {
+    position: relative;
+    right: 13px;
+}
+
 p.date {
     font-size: 85%;
     text-transform: uppercase;

@@ -1,8 +1,7 @@
 <div class="jumbotron">
-	<ul class="pager">
-		<li class="previous"><a href="{{ rtPrev }}">Previous Project</a></li>
-		<li class="next"><a href="{{ rtNext }}">Next Project</a></li>
-	</ul>
+	<div ng-include src="'templates/pager.html'">
+	</div>
+
 	<p class="date">COSC363: Computer Graphics, Semester one, 2014</p>
 	<h1 class="headline">Ray Tracing</h1>
 	<p class="tag">An analysis of my attempt at writing a ray tracer in C/C++.</p>
@@ -40,9 +39,7 @@
 	<hr>
 	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> It's not a bug; it's an undocumented feature! <sup><i class="fa fa-quote-right"></i></sup> — Unknown</p>
 
-	<ul class="pager">
-		<li class="previous"><a href="{{ rtPrev }}">Previous Project</a></li>
-		<li class="next"><a href="{{ rtNext }}">Next Project</a></li>
-	</ul>
+	<div ng-include src="'templates/pager.html'">
+	</div>
 </div>
 

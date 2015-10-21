@@ -15,37 +15,37 @@ ceoApp.config(function($routeProvider) {
 
 		.when('/seng-group-project', {
 			templateUrl : 'pages/segp.html',
-			controller  : 'workController'
+			controller  : 'segpController'
 		})
 
 		.when('/ux-group-project', {
 			templateUrl : 'pages/uxgp.html',
-			controller  : 'workController'
+			controller  : 'uxgpController'
 		})
 
 		.when('/single-page-app', {
 			templateUrl : 'pages/spa.html',
-			controller  : 'workController'
+			controller  : 'spaController'
 		})
 
 		.when('/ray-tracing', {
 			templateUrl : 'pages/rt.html',
-			controller  : 'workController'
+			controller  : 'rtController'
 		})
 
 		.when('/3d-design', {
 			templateUrl : 'pages/3dd.html',
-			controller  : 'workController'
+			controller  : '3ddController'
 		})
 
 		.when('/art-design-portfolio', {
 			templateUrl : 'pages/art.html',
-			controller  : 'workController'
+			controller  : 'artController'
 		})
 
 		.when('/misc-art', {
 			templateUrl : 'pages/ma.html',
-			controller  : 'workController'
+			controller  : 'maController'
 		})
 
 		.otherwise({
@@ -54,10 +54,23 @@ ceoApp.config(function($routeProvider) {
 });
 
 ceoApp.controller('workController', function($scope) {
-	// ******************* SEGP *******************
 	$scope.segpThumb = "img/work/segp-thumb.jpg";
-	$scope.segpPrev = "#work";
-	$scope.segpNext = "#ux-group-project";
+	$scope.uxgpThumb = "img/work/uxgp-thumb.jpg";
+	$scope.spaThumb = "img/work/spa-thumb-uc.jpg";
+	$scope.rtThumb = "img/work/rt-thumb.jpg";
+	$scope.threeddThumb = "img/work/3dd-thumb-uc.jpg";
+	$scope.adpThumb = "img/work/adp-thumb.jpg";
+	$scope.maThumb = "img/work/ma-thumb.jpg";
+	
+});
+
+ceoApp.controller('segpController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#ux-group-project";
+	$scope.prevDisabled = "disabled";
+	$scope.nextDisabled = "";
 
 	$scope.segpGallery00 = "http://i.imgur.com/Bb2XcG2.jpg";
 	$scope.segpGallery00Thumb = "http://i.imgur.com/Bb2XcG2t.jpg";
@@ -94,11 +107,15 @@ ceoApp.controller('workController', function($scope) {
 	$scope.segpGallery08 = "http://i.imgur.com/PNFKdPU.jpg";
 	$scope.segpGallery08Thumb = "http://i.imgur.com/PNFKdPUt.jpg";
 	$scope.segpGallery08Title = "Zoom functionality; stepped or mouse wheel controlled."
+});
 
-	// ******************* UXGP *******************
-	$scope.uxgpThumb = "img/work/uxgp-thumb.jpg";
-	$scope.uxgpPrev = "#seng-group-project";
-	$scope.uxgpNext = "#ray-tracing";
+ceoApp.controller('uxgpController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#seng-group-project";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#ray-tracing";
+	$scope.nextDisabled = "";
+	$scope.prevDisabled = "";
 
 	$scope.uxgpLogo00 = "http://i.imgur.com/3QWsWVQ.jpg";
 	$scope.uxgpLogo00Thumb = "http://i.imgur.com/F8fWgiJ.png";
@@ -148,16 +165,24 @@ ceoApp.controller('workController', function($scope) {
 	$scope.uxgpHighFidChanges02 = "http://i.imgur.com/AfA43FR.png";
 	$scope.uxgpHighFidChanges02Thumb = "http://i.imgur.com/AfA43FRm.png";
 	$scope.uxgpHighFidChanges02Title = "The 'Help' dialog that appears when the question mark button to the right of the Pickup button is pressed.";
+});
 
-	// ******************* SPA *******************
-	$scope.spaThumb = "img/work/spa-thumb-uc.jpg";
-	$scope.spaPrev = "#ux-group-project";
-	$scope.spaNext = "#ray-tracing";
+ceoApp.controller('spaController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#ux-group-project";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#ray-tracing";
+	$scope.nextDisabled = "";
+	$scope.prevDisabled = "";
+});
 
-	// ******************* RT *******************
-	$scope.rtThumb = "img/work/rt-thumb.jpg";
-	$scope.rtPrev = "#ux-group-project";
-	$scope.rtNext = "#art-design-portfolio";
+ceoApp.controller('rtController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#ux-group-project";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#art-design-portfolio";
+	$scope.nextDisabled = "";
+	$scope.prevDisabled = "";
 
 	$scope.rtGallery00 = "http://i.imgur.com/oLoflk7.png";
 	$scope.rtGallery00Thumb = "http://i.imgur.com/oLoflk7m.png";
@@ -165,16 +190,24 @@ ceoApp.controller('workController', function($scope) {
 	$scope.rtGallery01 = "http://i.imgur.com/dZXXgyr.png";
 	$scope.rtGallery01Thumb = "http://i.imgur.com/dZXXgyrm.png";
 	$scope.rtGallery01Title = "Anti-aliasing enabled. Render time: 18.2 seconds on the university lab computers.";
+});
 
-	// ******************* 3DD *******************
-	$scope.threeddThumb = "img/work/3dd-thumb-uc.jpg";
-	$scope.threeddPrev = "#ray-tracing";
-	$scope.threeddNext = "#art-design-portfolio";
+ceoApp.controller('3ddController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#ray-tracing";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#art-design-portfolio";
+	$scope.nextDisabled = "";
+	$scope.prevDisabled = "";
+});
 
-	// ******************* ADP *******************
-	$scope.adpThumb = "img/work/adp-thumb.jpg";
-	$scope.adpNext = "#misc-art";
-	$scope.adpPrev = "#ray-tracing";
+ceoApp.controller('artController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#ray-tracing";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#misc-art";
+	$scope.nextDisabled = "";
+	$scope.prevDisabled = "";
 
 	$scope.adpGallery00 = "http://i.imgur.com/Z8gsseD.jpg";
 	$scope.adpGallery00Thumb = "http://i.imgur.com/Z8gsseDm.jpg";
@@ -227,11 +260,15 @@ ceoApp.controller('workController', function($scope) {
 	$scope.adpGallery12 = "http://i.imgur.com/UkJwc2M.jpg";
 	$scope.adpGallery12Thumb = "http://i.imgur.com/UkJwc2Mh.jpg";
 	$scope.adpGallery12Title = "Template folder layout.";
+});
 
-	// ******************* MA *******************
-	$scope.maThumb = "img/work/ma-thumb.jpg";
-	$scope.maNext = "#work";
-	$scope.maPrev = "#art-design-portfolio";
+ceoApp.controller('maController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#art-design-portfolio";
+	$scope.homePage = "#work";
+	$scope.nextPage = "";
+	$scope.nextDisabled = "disabled";
+	$scope.prevDisabled = "";
 
 	$scope.maGallery00 = "http://i.imgur.com/qimGX9r.jpg";
 	$scope.maGallery00Thumb = "http://i.imgur.com/qimGX9rm.jpg";
