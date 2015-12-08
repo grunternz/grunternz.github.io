@@ -13,6 +13,11 @@ ceoApp.config(function($routeProvider) {
 			controller  : 'workController'
 		})
 
+		.when('/game-art', {
+			templateUrl : 'pages/ga.html',
+			controller : 'gaController'
+		})
+
 		.when('/seng-group-project', {
 			templateUrl : 'pages/segp.html',
 			controller  : 'segpController'
@@ -54,6 +59,7 @@ ceoApp.config(function($routeProvider) {
 });
 
 ceoApp.controller('workController', function($scope) {
+	$scope.gaThumb = "img/work/ga-thumb.jpg";
 	$scope.segpThumb = "img/work/segp-thumb.jpg";
 	$scope.uxgpThumb = "img/work/uxgp-thumb.jpg";
 	$scope.spaThumb = "img/work/spa-thumb-uc.jpg";
@@ -64,12 +70,48 @@ ceoApp.controller('workController', function($scope) {
 	
 });
 
-ceoApp.controller('segpController', function($scope) {
+ceoApp.controller('gaController', function($scope) {
 	$scope.pager = "templates/pager.html";
 	$scope.prevPage = "";
 	$scope.homePage = "#work";
-	$scope.nextPage = "#ux-group-project";
+	$scope.nextPage = "#seng-group-project";
 	$scope.prevDisabled = "disabled";
+	$scope.nextDisabled = "";
+
+	$scope.gaGallery00Turn = "http://gfycat.com/LimitedTestyKodiakbear";
+	$scope.gaGallery00 = "http://i.imgur.com/aq47o5L.jpg";
+	$scope.gaGallery00Thumb = "http://i.imgur.com/aq47o5Lb.jpg";
+	$scope.gaGallery00Title = "Diffuse + displacement + normal + ambient occlusion.";
+	$scope.gaGallery01 = "http://i.imgur.com/4lLzLHf.jpg";
+	$scope.gaGallery01Thumb = "http://i.imgur.com/4lLzLHfb.jpg";
+	$scope.gaGallery01Title = "Diffuse + displacement + normal + ambient occlusion.";
+	$scope.gaGallery02 = "http://i.imgur.com/JwLxWDd.jpg";
+	$scope.gaGallery02Thumb = "http://i.imgur.com/JwLxWDdb.jpg";
+	$scope.gaGallery02Title = "No displacement mapping.";
+	$scope.gaGallery03 = "http://i.imgur.com/ZVELbAG.jpg";
+	$scope.gaGallery03Thumb = "http://i.imgur.com/ZVELbAGb.jpg";
+	$scope.gaGallery03Title = "Diffuse.";
+	$scope.gaGallery04 = "http://i.imgur.com/mxsjQM0.jpg";
+	$scope.gaGallery04Thumb = "http://i.imgur.com/mxsjQM0b.jpg";
+	$scope.gaGallery04Title = "Normal."
+	$scope.gaGallery05 = "http://i.imgur.com/OBXPwyG.jpg";
+	$scope.gaGallery05Thumb = "http://i.imgur.com/OBXPwyGb.jpg";
+	$scope.gaGallery05Title ="displacement."
+	$scope.gaGallery06 = "http://i.imgur.com/wm43x5u.jpg";
+	$scope.gaGallery06Thumb = "http://i.imgur.com/wm43x5ub.jpg";
+	$scope.gaGallery06Title ="Ambient occlusion."
+	$scope.gaGallery07 = "http://i.imgur.com/W4Ob469.jpg";
+	$scope.gaGallery07Thumb = "http://i.imgur.com/W4Ob469b.jpg";
+	$scope.gaGallery07Title = "High poly sculpt, approximately 900k polygons."
+	
+});
+
+ceoApp.controller('segpController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#game-art";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#ux-group-project";
+	$scope.prevDisabled = "";
 	$scope.nextDisabled = "";
 
 	$scope.segpGallery00 = "http://i.imgur.com/Bb2XcG2.jpg";
@@ -296,5 +338,7 @@ ceoApp.controller('maController', function($scope) {
 
 	$scope.maGallery06 = "http://i.imgur.com/iryTrGi.jpg";
 	$scope.maGallery06Thumb ="http://i.imgur.com/iryTrGim.jpg";
-	$scope.maGallery06Title = "~2009 - Photoshop CS4"	
+	$scope.maGallery06Title = "~2009 - Photoshop CS4"
+
+	$scope.scroll
 });
