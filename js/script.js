@@ -79,7 +79,7 @@ ceoApp.controller('gaController', function($scope) {
 	$scope.nextDisabled = "";
 
 	$scope.gaGallery00Turn = "http://gfycat.com/LimitedTestyKodiakbear";
-	$scope.gaGallery00 = "http://i.imgur.com/aq47o5L.jpg";
+	$scope.gaGallery00 = "http://i.imgur.com/aq47o5L.jpg?";
 	$scope.gaGallery00Thumb = "http://i.imgur.com/aq47o5Lb.jpg";
 	$scope.gaGallery00Title = "Diffuse + displacement + normal + ambient occlusion.";
 	$scope.gaGallery01 = "http://i.imgur.com/4lLzLHf.jpg";
