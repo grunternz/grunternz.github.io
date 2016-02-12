@@ -1,0 +1,56 @@
+<div class="jumbotron">
+	<div ng-include src="'templates/pager.html'">
+	</div>
+
+	<p class="date">Android Development, Ongoing</p>
+	<h1 class="headline">Android Development</h1>
+	<p class="tag">A summary of my efforts in Android development so far.</p>
+	<hr>
+
+	<p class="article">I was inspired and motivated to get into mobile development by a friend of mine; it just struck a cord with me, as it was a good direction to explore considering my experience and exposure to Java. Naturally we started bouncing ideas to and fro, of apps that we would like to have and that's where I was pitched with the idea that is Catnapp. Sure it's a bit silly, but the point of this is to learn so it's actually perfect.</p>
+
+	<h2>Catnapp</h2>
+	<blockquote><p>Time to get serious. If there is one thing human kind has learnt from the internet it is that absolutely nothing on planet earth beats looking at cats.</p></blockquote>
+	<p class="article">Whether it's cats in party hats, kittens cuddling, cats in boxes, catstaches, an 100 hour long nyan cat extravaganza or a video of cat heads peeping creepily out from behind objects — cats have fast become a leading industry in today's globalised world.</p>
+
+	<h3>How it works</h3>
+	<p class="article">By syncing with the Imgur API, at a single tap of the screen the Catnapp produces for the user one random cat related image or animated gif. If the user is unhappy with the produced content they can simply tap the screen again. What a laugh! By producing absolutely inane and meaningless cat images or videos at the push of a button, users will be entertained for hours, or minutes, maybe even seconds — who really cares!? The Catnapp certainly won't.</p>
+
+	<h3>Roadmap</h3>
+	<p class="article">Below follows a list of planned functionality for Catnapp.
+		<ul class="list-line-height">
+			<li>Support for animated gifs.</li>
+			<li>User interface revamp; introducing the actionbar.</li>
+			<li>Subreddit customisation, from preselected cat-related subreddits.</li>
+			<li>For those who can't bear to lose track of their favourite cat finds, users will be able to favourite them for later reference.</li>
+			<li>Cat owners rejoice! Users will be able to upload their own cat-related images which will be added to the pool from which Catnapp pulls from (upon moderation of course).</li>
+		</ul>
+	</p>
+
+	<h3>Gallery</h3>
+	<p class="article">The user interface is very much a work in progress, and most likely everything will be re-worked once the base functionality is more complete.</p>
+	<div class="container">
+		<div class="row row-centered list-undecorated">
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ catnapp00 }}" data-lightbox="catnapp" data-title="{{ catnapp00Title }}"><img class="img-responsive example-image" src="{{ catnapp00Thumb }}"/></a></li>
+			<li class="col-md-3 col-centered"><a class="example-image-link" href="{{ catnapp01 }}" data-lightbox="catnapp" data-title="{{ catnapp01Title }}"><img class="img-responsive example-image" src="{{ catnapp01Thumb }}"/></a></li>
+		</div>
+	</div>
+
+	<h3>The REST Client</h3>
+	<p class="article">Following are a few code snippets that illustrate how I implemented the backend of Catnapp with Square's Retrofit library, found <a href="http://square.github.io/retrofit/" target="_blank">here.</a> This is the guts of the application and from here we can get pages from subreddit galleries to work with.</p>
+	<div ng-bind-html="gistImgurRestClient"></div>
+
+	<div ng-bind-html="gistImgurRestClientService"></div>
+
+	<!--<button title="Show/hide the code" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/hide the code</button>
+	
+
+	<div id="spoiler" style="display:none"> 
+	</div> -->
+	
+	<hr>
+	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> It's not a bug; it's an undocumented feature! <sup><i class="fa fa-quote-right"></i></sup> — Unknown</p>
+
+	<div ng-include src="'templates/pager.html'">
+	</div>
+</div>

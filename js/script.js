@@ -1,4 +1,26 @@
-var ceoApp = angular.module('ceoApp', ['ngRoute']);
+var ceoApp = angular.module('ceoApp', ['ngRoute', 'ngSanitize', 'gist-embed']);
+
+/*ceoApp.directive('gist', function() {
+    return function(scope, elm, attrs) {
+        var gistId = scope.gistId;
+
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('width', '100%');
+        iframe.setAttribute('frameborder', '0');
+        iframe.id = "gist-" + gistId;
+        elm[0].appendChild(iframe);
+
+        var iframeHtml = '<html><head><base target="_parent"><style>table{font-size:12px;}</style></head><body onload="parent.document.getElementById(\'' + iframe.id + '\').style.height=document.body.scrollHeight + \'px\'"><scr' + 'ipt type="text/javascript" src="https://gist.github.com/' + gistId + '.js"></sc'+'ript></body></html>';
+
+        var doc = iframe.document;
+        if (iframe.contentDocument) doc = iframe.contentDocument;
+        else if (iframe.contentWindow) doc = iframe.contentWindow.document;
+
+        doc.open();
+        doc.writeln(iframeHtml);
+        doc.close();
+    };
+});*/
 
 ceoApp.config(function($routeProvider) {
 	$routeProvider
@@ -11,6 +33,11 @@ ceoApp.config(function($routeProvider) {
 		.when('/work', {
 			templateUrl : 'pages/work.html',
 			controller  : 'workController'
+		})
+
+		.when('/android-development', {
+			templateUrl : 'pages/android.html',
+			controller : 'androidController'
 		})
 
 		.when('/game-art', {
@@ -59,6 +86,7 @@ ceoApp.config(function($routeProvider) {
 });
 
 ceoApp.controller('workController', function($scope) {
+	$scope.adThumb = "img/work/ad-thumb.jpg";
 	$scope.gaThumb = "img/work/ga-thumb.jpg";
 	$scope.segpThumb = "img/work/segp-thumb.jpg";
 	$scope.uxgpThumb = "img/work/uxgp-thumb.jpg";
@@ -70,12 +98,31 @@ ceoApp.controller('workController', function($scope) {
 	
 });
 
-ceoApp.controller('gaController', function($scope) {
+ceoApp.controller('androidController', function($scope, $sce) {
 	$scope.pager = "templates/pager.html";
 	$scope.prevPage = "";
 	$scope.homePage = "#work";
-	$scope.nextPage = "#seng-group-project";
+	$scope.nextPage = "#game-art";
 	$scope.prevDisabled = "disabled";
+	$scope.nextDisabled = "";
+
+	$scope.catnapp00 = "http://i.imgur.com/XvZZHbp.png";
+	$scope.catnapp00Thumb = "http://i.imgur.com/XvZZHbpm.png";
+	$scope.catnapp00Title = "Prototype startup screen.";
+	$scope.catnapp01 = "http://i.imgur.com/kBIW0bd.png";
+	$scope.catnapp01Thumb = "http://i.imgur.com/kBIW0bdm.png";
+	$scope.catnapp01Title = "Prototype, rudimentary main screen (will be reworked soon).";
+
+	$scope.gistImgurRestClient = $sce.trustAsHtml("<code data-gist-id='grunternz/7dace8cfbd40d6931499'></code>");
+	$scope.gistImgurRestClientService = $sce.trustAsHtml("<code data-gist-id='grunternz/4fc4d0e76daa12a7785c'></code>");
+});
+
+ceoApp.controller('gaController', function($scope) {
+	$scope.pager = "templates/pager.html";
+	$scope.prevPage = "#android";
+	$scope.homePage = "#work";
+	$scope.nextPage = "#seng-group-project";
+	$scope.prevDisabled = "";
 	$scope.nextDisabled = "";
 
 	$scope.gaGallery00Turn = "http://gfycat.com/LimitedTestyKodiakbear";

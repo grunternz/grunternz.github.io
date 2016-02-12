@@ -184,6 +184,7 @@ blockquote p {
 
 .list-line-height {
     line-height: 140%;
+    padding-left: 3em;
 }
 
 .list-undecorated {
