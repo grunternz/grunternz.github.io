@@ -119,7 +119,7 @@ ceoApp.controller('androidController', function($scope, $sce) {
 
 ceoApp.controller('gaController', function($scope) {
 	$scope.pager = "templates/pager.html";
-	$scope.prevPage = "#android";
+	$scope.prevPage = "#android-development";
 	$scope.homePage = "#work";
 	$scope.nextPage = "#seng-group-project";
 	$scope.prevDisabled = "";
