@@ -9,14 +9,9 @@
 
 	<div class="container">
 		<div class="row list-undecorated">
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery00 }}" data-lightbox="ma" data-title="{{ maGallery00Title }}"><img class="img-responsive example-image" src="{{ maGallery00Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery01 }}" data-lightbox="ma" data-title="{{ maGallery01Title }}"><img class="img-responsive example-image" src="{{ maGallery01Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery02 }}" data-lightbox="ma" data-title="{{ maGallery02Title }}"><img class="img-responsive example-image" src="{{ maGallery02Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery03 }}" data-lightbox="ma" data-title="{{ maGallery03Title }}"><img class="img-responsive example-image" src="{{ maGallery03Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery04 }}" data-lightbox="ma" data-title="{{ maGallery04Title }}"><img class="img-responsive example-image" src="{{ maGallery04Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery05 }}" data-lightbox="ma" data-title="{{ maGallery05Title }}"><img class="img-responsive example-image" src="{{ maGallery05Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery06 }}" data-lightbox="ma" data-title="{{ maGallery06Title }}"><img class="img-responsive example-image" src="{{ maGallery06Thumb }}"/></a></div>
-			<div class="col-xs-6 col-md-4"><a class="example-image-link" href="{{ maGallery07 }}" data-lightbox="ma" data-title="{{ maGallery07Title }}"><img class="img-responsive example-image" src="{{ maGallery07Thumb }}"/></a></div>
+			<div class="col-xs-6 col-md-4" ng-repeat="art in gallery">
+				<a class="example-image-link" href="{{ art.image }}" data-lightbox="ma" data-title="{{ art.title }}"><img class="img-responsive example-image" ng-src="{{ art.thumb }}"/></a>
+			</div>
 		</div>
 	</div>
 

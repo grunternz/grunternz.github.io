@@ -1,27 +1,5 @@
 var ceoApp = angular.module('ceoApp', ['ngRoute', 'ngSanitize', 'gist-embed']);
 
-/*ceoApp.directive('gist', function() {
-    return function(scope, elm, attrs) {
-        var gistId = scope.gistId;
-
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('width', '100%');
-        iframe.setAttribute('frameborder', '0');
-        iframe.id = "gist-" + gistId;
-        elm[0].appendChild(iframe);
-
-        var iframeHtml = '<html><head><base target="_parent"><style>table{font-size:12px;}</style></head><body onload="parent.document.getElementById(\'' + iframe.id + '\').style.height=document.body.scrollHeight + \'px\'"><scr' + 'ipt type="text/javascript" src="https://gist.github.com/' + gistId + '.js"></sc'+'ript></body></html>';
-
-        var doc = iframe.document;
-        if (iframe.contentDocument) doc = iframe.contentDocument;
-        else if (iframe.contentWindow) doc = iframe.contentWindow.document;
-
-        doc.open();
-        doc.writeln(iframeHtml);
-        doc.close();
-    };
-});*/
-
 ceoApp.config(function($routeProvider) {
 	$routeProvider
 
@@ -359,37 +337,47 @@ ceoApp.controller('maController', function($scope) {
 	$scope.nextDisabled = "disabled";
 	$scope.prevDisabled = "";
 
+	$scope.gallery = [
+		{
+			image: 'http://i.imgur.com/tU8m64X.jpg',
+			thumb: 'http://i.imgur.com/p0sRbBHm.jpg',
+			title: '14/01/2016 - Photoshop CS5. Concept login screen for a mobile application idea of mine.'
+		},
+		{
+			image: 'http://i.imgur.com/qimGX9r.jpg',
+			thumb: 'http://i.imgur.com/qimGX9rm.jpg',
+			title: '22/10/2013 - After Effects CS5 & Photoshop CS5. Made with particles using Particular. Each layer was going to be radially sound-reactive on varying frequencies however I never got around to finishing it.'
+		},
+		{
+			image: 'http://i.imgur.com/tL3OQ8P.jpg',
+			thumb: 'http://i.imgur.com/tL3OQ8Pm.jpg',
+			title: '06/10/2011 - Cinema 4D R11.5 & Photoshop CS5.'
+		},
+		{
+			image: 'http://i.imgur.com/P8e3pj6.jpg',
+			thumb: 'http://i.imgur.com/P8e3pj6m.jpg',
+			title: '05/05/2011 - Illustrator CS5, Cinema 4D R11.5 & Photoshop CS5.'
+		},
+		{
+			image: 'http://i.imgur.com/9wNyEhr.jpg',
+			thumb: 'http://i.imgur.com/9wNyEhrm.jpg',
+			title: '24/06/2010 - Illustrator CS4, Cinema 4D R11.5 & Photoshop CS4.'
+		},
+		{
+			image: 'http://i.imgur.com/c6ufr4N.jpg',
+			thumb: 'http://i.imgur.com/c6ufr4Nm.jpg',
+			title: '01/06/2010 - Photoshop CS4.'
+		},
+		{
+			image: 'http://i.imgur.com/N65sWLp.jpg',
+			thumb: 'http://i.imgur.com/swqHcGEm.jpg',
+			title: '03/03/2010 - Photoshop CS4.'
+		},
+		{
+			image: 'http://i.imgur.com/iryTrGi.jpg',
+			thumb: 'http://i.imgur.com/iryTrGim.jpg',
+			title: '~2009 - Photoshop CS4.'
+		}
+	];
 	
-
-	$scope.maGallery00 = "http://i.imgur.com/tU8m64X.jpg";
-	$scope.maGallery00Thumb = "http://i.imgur.com/p0sRbBHm.jpg";
-	$scope.maGallery00Title = "14/01/2016 - Photoshop CS5";
-
-	$scope.maGallery01 = "http://i.imgur.com/qimGX9r.jpg";
-	$scope.maGallery01Thumb = "http://i.imgur.com/qimGX9rm.jpg";
-	$scope.maGallery01Title = "22/10/2013 - After Effects CS5 & Photoshop CS5";
-
-	$scope.maGallery02 = "http://i.imgur.com/tL3OQ8P.jpg";
-	$scope.maGallery02Thumb = "http://i.imgur.com/tL3OQ8Pm.jpg";
-	$scope.maGallery02Title = "06/10/2011 - Cinema 4D R11.5 & Photoshop CS5";
-
-	$scope.maGallery03 = "http://i.imgur.com/P8e3pj6.jpg";
-	$scope.maGallery03Thumb = "http://i.imgur.com/P8e3pj6m.jpg";
-	$scope.maGallery03Title = "05/05/2011 - Illustrator CS5, Cinema 4D R11.5 & Photoshop CS5";
-
-	$scope.maGallery04 = "http://i.imgur.com/9wNyEhr.jpg";
-	$scope.maGallery04Thumb = "http://i.imgur.com/9wNyEhrm.jpg";
-	$scope.maGallery04Title = "24/06/2010 - Illustrator CS4, Cinema 4D R11.5 & Photoshop CS4";
-
-	$scope.maGallery05 = "http://i.imgur.com/c6ufr4N.jpg";
-	$scope.maGallery05Thumb = "http://i.imgur.com/c6ufr4Nm.jpg";
-	$scope.maGallery05Title = "01/06/2010 - Photoshop CS4";
-
-	$scope.maGallery06 = "http://i.imgur.com/N65sWLp.jpg";
-	$scope.maGallery06Thumb = "http://i.imgur.com/swqHcGEm.jpg";
-	$scope.maGallery06Title = "03/03/2010 - Photoshop CS4";
-
-	$scope.maGallery07 = "http://i.imgur.com/iryTrGi.jpg";
-	$scope.maGallery07Thumb ="http://i.imgur.com/iryTrGim.jpg";
-	$scope.maGallery07Title = "~2009 - Photoshop CS4";
 });
