@@ -15,25 +15,17 @@
 
 	<div class="container">
 		<div class="row list-undecorated">
-			<a class="example-image-link" href="{{ adpGallery12 }}" data-lightbox="adp" data-title="{{ adpGallery12Title }}"><img class="img-responsive example-image" src="{{ adpGallery12Thumb }}"/></a>
+			<a class="example-image-link" href="{{ folderTemplate }}" data-lightbox="folder-layout" data-title="{{ folderTemplateTitle }}"><img class="img-responsive example-image" src="{{ folderTemplateThumb }}"/></a>
 		</div>
 	</div>
 
 	<h2>Folder Layout</h2>
+
 	<div class="container">
 		<div class="row list-undecorated">
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery00 }}" data-lightbox="adp" data-title="{{ adpGallery00Title }}"><img class="img-responsive example-image" src="{{ adpGallery00Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery01 }}" data-lightbox="adp" data-title="{{ adpGallery01Title }}"><img class="img-responsive example-image" src="{{ adpGallery01Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery02 }}" data-lightbox="adp" data-title="{{ adpGallery02Title }}"><img class="img-responsive example-image" src="{{ adpGallery02Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery03 }}" data-lightbox="adp" data-title="{{ adpGallery03Title }}"><img class="img-responsive example-image" src="{{ adpGallery03Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery04 }}" data-lightbox="adp" data-title="{{ adpGallery04Title }}"><img class="img-responsive example-image" src="{{ adpGallery04Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery05 }}" data-lightbox="adp" data-title="{{ adpGallery05Title }}"><img class="img-responsive example-image" src="{{ adpGallery05Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery06 }}" data-lightbox="adp" data-title="{{ adpGallery06Title }}"><img class="img-responsive example-image" src="{{ adpGallery06Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery07 }}" data-lightbox="adp" data-title="{{ adpGallery07Title }}"><img class="img-responsive example-image" src="{{ adpGallery07Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery08 }}" data-lightbox="adp" data-title="{{ adpGallery08Title }}"><img class="img-responsive example-image" src="{{ adpGallery08Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery09 }}" data-lightbox="adp" data-title="{{ adpGallery09Title }}"><img class="img-responsive example-image" src="{{ adpGallery09Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery10 }}" data-lightbox="adp" data-title="{{ adpGallery10Title }}"><img class="img-responsive example-image" src="{{ adpGallery10Thumb }}"/></a></div>
-			<div class="col-xs-3 col-md-3"><a class="example-image-link" href="{{ adpGallery11 }}" data-lightbox="adp" data-title="{{ adpGallery11Title }}"><img class="img-responsive example-image" src="{{ adpGallery11Thumb }}"/></a></div>
+			<div class="col-xs-3 col-md-3" ng-repeat="art in gallery">
+				<a class="example-image-link" href="{{ art.image }}" data-lightbox="art-design-portfolio" data-title="{{ art.title }}"><img class="img-responsive example-image" ng-src="{{ art.thumb }}"/></a>
+			</div>
 		</div>
 	</div>
 

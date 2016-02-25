@@ -12,14 +12,9 @@
 
 	<div class="container">
 		<div class="row row-centered list-undecorated">
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery00 }}" data-lightbox="ga00" data-title="{{ gaGallery00Title }}"><img class="img-responsive example-image" src="{{ gaGallery00Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery01 }}" data-lightbox="ga00" data-title="{{ gaGallery01Title }}"><img class="img-responsive example-image" src="{{ gaGallery01Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery02 }}" data-lightbox="ga00" data-title="{{ gaGallery02Title }}"><img class="img-responsive example-image" src="{{ gaGallery02Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery03 }}" data-lightbox="ga00" data-title="{{ gaGallery03Title }}"><img class="img-responsive example-image" src="{{ gaGallery03Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery04 }}" data-lightbox="ga00" data-title="{{ gaGallery04Title }}"><img class="img-responsive example-image" src="{{ gaGallery04Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery05 }}" data-lightbox="ga00" data-title="{{ gaGallery05Title }}"><img class="img-responsive example-image" src="{{ gaGallery05Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery06 }}" data-lightbox="ga00" data-title="{{ gaGallery06Title }}"><img class="img-responsive example-image" src="{{ gaGallery06Thumb }}"/></a></li>
-			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><a class="example-image-link" href="{{ gaGallery07 }}" data-lightbox="ga00" data-title="{{ gaGallery07Title }}"><img class="img-responsive example-image" src="{{ gaGallery07Thumb }}"/></a></li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" ng-repeat="image in gallery">
+				<a class="example-image-link" href="{{ image.image }}" data-lightbox="game-art" data-title="{{ image.title }}"><img class="img-responsive example-image" ng-src="{{ image.thumb }}"/></a>
+			</li>
 		</ul>
 	</div>
 

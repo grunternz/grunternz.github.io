@@ -73,7 +73,6 @@ ceoApp.controller('workController', function($scope) {
 	$scope.threeddThumb = "img/work/3dd-thumb-uc.jpg";
 	$scope.adpThumb = "img/work/adp-thumb.jpg";
 	$scope.maThumb = "img/work/ma-thumb.jpg";
-	
 });
 
 ceoApp.controller('androidController', function($scope, $sce) {
@@ -104,31 +103,49 @@ ceoApp.controller('gaController', function($scope) {
 	$scope.nextDisabled = "";
 
 	$scope.gaGallery00Turn = "http://gfycat.com/LimitedTestyKodiakbear";
-	$scope.gaGallery00 = "http://i.imgur.com/aq47o5L.jpg";
-	$scope.gaGallery00Thumb = "http://i.imgur.com/aq47o5Lb.jpg";
-	$scope.gaGallery00Title = "Diffuse + displacement + normal + ambient occlusion.";
-	$scope.gaGallery01 = "http://i.imgur.com/4lLzLHf.jpg";
-	$scope.gaGallery01Thumb = "http://i.imgur.com/4lLzLHfb.jpg";
-	$scope.gaGallery01Title = "Diffuse + displacement + normal + ambient occlusion.";
-	$scope.gaGallery02 = "http://i.imgur.com/JwLxWDd.jpg";
-	$scope.gaGallery02Thumb = "http://i.imgur.com/JwLxWDdb.jpg";
-	$scope.gaGallery02Title = "No displacement mapping.";
-	$scope.gaGallery03 = "http://i.imgur.com/ZVELbAG.jpg";
-	$scope.gaGallery03Thumb = "http://i.imgur.com/ZVELbAGb.jpg";
-	$scope.gaGallery03Title = "Diffuse.";
-	$scope.gaGallery04 = "http://i.imgur.com/mxsjQM0.jpg";
-	$scope.gaGallery04Thumb = "http://i.imgur.com/mxsjQM0b.jpg";
-	$scope.gaGallery04Title = "Normal."
-	$scope.gaGallery05 = "http://i.imgur.com/OBXPwyG.jpg";
-	$scope.gaGallery05Thumb = "http://i.imgur.com/OBXPwyGb.jpg";
-	$scope.gaGallery05Title ="displacement."
-	$scope.gaGallery06 = "http://i.imgur.com/wm43x5u.jpg";
-	$scope.gaGallery06Thumb = "http://i.imgur.com/wm43x5ub.jpg";
-	$scope.gaGallery06Title ="Ambient occlusion."
-	$scope.gaGallery07 = "http://i.imgur.com/W4Ob469.jpg";
-	$scope.gaGallery07Thumb = "http://i.imgur.com/W4Ob469b.jpg";
-	$scope.gaGallery07Title = "High poly sculpt, approximately 900k polygons."
-	
+
+	$scope.gallery = [
+		{
+			image: 'http://i.imgur.com/aq47o5L.jpg',
+			thumb: 'http://i.imgur.com/aq47o5Lb.jpg',
+			title: 'Diffuse + displacement + normal + ambient occlusion.'
+		},
+		{
+			image: 'http://i.imgur.com/4lLzLHf.jpg',
+			thumb: 'http://i.imgur.com/4lLzLHfb.jpg',
+			title: 'Diffuse + displacement + normal + ambient occlusion.'
+		},
+		{
+			image: 'http://i.imgur.com/JwLxWDd.jpg',
+			thumb: 'http://i.imgur.com/JwLxWDdb.jpg',
+			title: 'No displacement mapping.'
+		},
+		{
+			image: 'http://i.imgur.com/ZVELbAG.jpg',
+			thumb: 'http://i.imgur.com/ZVELbAGb.jpg',
+			title: 'Diffuse.'
+		},
+		{
+			image: 'http://i.imgur.com/mxsjQM0.jpg',
+			thumb: 'http://i.imgur.com/mxsjQM0b.jpg',
+			title: 'Normal.'
+		},
+		{
+			image: 'http://i.imgur.com/OBXPwyG.jpg',
+			thumb: 'http://i.imgur.com/OBXPwyGb.jpg',
+			title: 'Displacement.'
+		},
+		{
+			image: 'http://i.imgur.com/wm43x5u.jpg',
+			thumb: 'http://i.imgur.com/wm43x5ub.jpg',
+			title: 'Ambient occlusion.'
+		},
+		{
+			image: 'http://i.imgur.com/W4Ob469.jpg',
+			thumb: 'http://i.imgur.com/W4Ob469b.jpg',
+			title: 'High poly sculpt, approximately 900k polygons.'
+		},
+	];
 });
 
 ceoApp.controller('segpController', function($scope) {
@@ -139,41 +156,53 @@ ceoApp.controller('segpController', function($scope) {
 	$scope.prevDisabled = "";
 	$scope.nextDisabled = "";
 
-	$scope.segpGallery00 = "http://i.imgur.com/Bb2XcG2.jpg";
-	$scope.segpGallery00Thumb = "http://i.imgur.com/Bb2XcG2t.jpg";
-	$scope.segpGallery00Title = "Some plot elements and the scratch pad.";
-
-	$scope.segpGallery01 = "http://i.imgur.com/cihVTQ0.jpg";
-	$scope.segpGallery01Thumb = "http://i.imgur.com/cihVTQ0t.jpg";
-	$scope.segpGallery01Title = "A plot element associated with a plotnode."
-
-	$scope.segpGallery02 = "http://i.imgur.com/kVYVEzq.jpg";
-	$scope.segpGallery02Thumb = "http://i.imgur.com/kVYVEzqt.jpg";
-	$scope.segpGallery02Title = "A sequence of plotnodes."
-
-	$scope.segpGallery03 = "http://i.imgur.com/HJHLEaX.jpg";
-	$scope.segpGallery03Thumb = "http://i.imgur.com/HJHLEaXt.jpg";
-	$scope.segpGallery03Title = "The sequence browser."
-
-	$scope.segpGallery04 = "http://i.imgur.com/5qp9wLR.jpg";
-	$scope.segpGallery04Thumb = "http://i.imgur.com/5qp9wLRt.jpg";
-	$scope.segpGallery04Title = "File menu."
-
-	$scope.segpGallery05 = "http://i.imgur.com/OxWPV4w.jpg";
-	$scope.segpGallery05Thumb = "http://i.imgur.com/OxWPV4wt.jpg";
-	$scope.segpGallery05Title = "Recycling bin."
-
-	$scope.segpGallery06 = "http://i.imgur.com/hGmd8Li.jpg";
-	$scope.segpGallery06Thumb = "http://i.imgur.com/hGmd8Lit.jpg";
-	$scope.segpGallery06Title = "Macro creation."
-
-	$scope.segpGallery07 = "http://i.imgur.com/pjksA0m.jpg";
-	$scope.segpGallery07Thumb = "http://i.imgur.com/pjksA0mt.jpg";
-	$scope.segpGallery07Title = "Graphical perspective."
-
-	$scope.segpGallery08 = "http://i.imgur.com/PNFKdPU.jpg";
-	$scope.segpGallery08Thumb = "http://i.imgur.com/PNFKdPUt.jpg";
-	$scope.segpGallery08Title = "Zoom functionality; stepped or mouse wheel controlled."
+	$scope.gallery = [
+		{
+			image: 'http://i.imgur.com/Bb2XcG2.jpg',
+			thumb: 'http://i.imgur.com/Bb2XcG2t.jpg',
+			title: 'Some plot elements and the scratch pad.'
+		},
+		{
+			image: 'http://i.imgur.com/cihVTQ0.jpg',
+			thumb: 'http://i.imgur.com/cihVTQ0t.jpg',
+			title: 'A plot element associated with a plotnode.'
+		},
+		{
+			image: 'http://i.imgur.com/kVYVEzq.jpg',
+			thumb: 'http://i.imgur.com/kVYVEzqt.jpg',
+			title: 'A sequence of plotnodes.'
+		},
+		{
+			image: 'http://i.imgur.com/HJHLEaX.jpg',
+			thumb: 'http://i.imgur.com/HJHLEaXt.jpg',
+			title: 'The sequence browser.'
+		},
+		{
+			image: 'http://i.imgur.com/5qp9wLR.jpg',
+			thumb: 'http://i.imgur.com/5qp9wLRt.jpg',
+			title: 'File menu.'
+		},
+		{
+			image: 'http://i.imgur.com/OxWPV4w.jpg',
+			thumb: 'http://i.imgur.com/OxWPV4wt.jpg',
+			title: 'Recycling bin.'
+		},
+		{
+			image: 'http://i.imgur.com/hGmd8Li.jpg',
+			thumb: 'http://i.imgur.com/hGmd8Lit.jpg',
+			title: 'Macro creation.'
+		},
+		{
+			image: 'http://i.imgur.com/pjksA0m.jpg',
+			thumb: 'http://i.imgur.com/pjksA0mt.jpg',
+			title: 'Graphical perspective.'
+		},
+		{
+			image: 'http://i.imgur.com/PNFKdPU.jpg',
+			thumb: 'http://i.imgur.com/PNFKdPUt.jpg',
+			title: 'Zoom functionality; stepped or mouse wheel controlled.'
+		}
+	];
 });
 
 ceoApp.controller('uxgpController', function($scope) {
@@ -259,15 +288,6 @@ ceoApp.controller('rtController', function($scope) {
 	$scope.rtGallery01Title = "Anti-aliasing enabled. Render time: 18.2 seconds on the university lab computers.";
 });
 
-ceoApp.controller('3ddController', function($scope) {
-	$scope.pager = "templates/pager.html";
-	$scope.prevPage = "#ray-tracing";
-	$scope.homePage = "#work";
-	$scope.nextPage = "#art-design-portfolio";
-	$scope.nextDisabled = "";
-	$scope.prevDisabled = "";
-});
-
 ceoApp.controller('artController', function($scope) {
 	$scope.pager = "templates/pager.html";
 	$scope.prevPage = "#ray-tracing";
@@ -276,57 +296,72 @@ ceoApp.controller('artController', function($scope) {
 	$scope.nextDisabled = "";
 	$scope.prevDisabled = "";
 
-	$scope.adpGallery00 = "http://i.imgur.com/Z8gsseD.jpg";
-	$scope.adpGallery00Thumb = "http://i.imgur.com/Z8gsseDm.jpg";
-	$scope.adpGallery00Title = "Panel 1.1: Cover development.";
+	$scope.folderTemplate = "http://i.imgur.com/UkJwc2M.jpg";
+	$scope.folderTemplateThumb = "http://i.imgur.com/UkJwc2Mh.jpg";
+	$scope.folderTemplateTitle = "Template folder layout.";
 
-	$scope.adpGallery01 = "http://i.imgur.com/6PCy6NI.jpg";
-	$scope.adpGallery01Thumb = "http://i.imgur.com/6PCy6NIm.jpg";
-	$scope.adpGallery01Title = "Panel 1.2: Logo development.";
-
-	$scope.adpGallery02 = "http://i.imgur.com/k907HbJ.jpg";
-	$scope.adpGallery02Thumb = "http://i.imgur.com/k907HbJm.jpg";
-	$scope.adpGallery02Title = "Panel 1.3: Cover development continued.";
-
-	$scope.adpGallery03 = "http://i.imgur.com/rtnYwIu.jpg";
-	$scope.adpGallery03Thumb = "http://i.imgur.com/rtnYwIum.jpg";
-	$scope.adpGallery03Title = "Panel 1.4: Final cover.";
-
-	$scope.adpGallery04 = "http://i.imgur.com/PgI8ve2.jpg";
-	$scope.adpGallery04Thumb = "http://i.imgur.com/PgI8ve2m.jpg";
-	$scope.adpGallery04Title = "Panel 2.1: Deck, wheel & double page spread development.";
-
-	$scope.adpGallery05 = "http://i.imgur.com/QOMYBJq.jpg";
-	$scope.adpGallery05Thumb = "http://i.imgur.com/QOMYBJqm.jpg";
-	$scope.adpGallery05Title = "Panel 2.2: Contents page development.";
-
-	$scope.adpGallery06 = "http://i.imgur.com/4prO65I.jpg";
-	$scope.adpGallery06Thumb = "http://i.imgur.com/4prO65Im.jpg";
-	$scope.adpGallery06Title = "Panel 2.3: Double page spread & gallery development.";
-
-	$scope.adpGallery07 = "http://i.imgur.com/v9nT2Re.jpg";
-	$scope.adpGallery07Thumb = "http://i.imgur.com/v9nT2Rem.jpg";
-	$scope.adpGallery07Title = "Panel 2.4: Final double page spread & gallery.";
-
-	$scope.adpGallery08 = "http://i.imgur.com/wGFYE6A.jpg";
-	$scope.adpGallery08Thumb = "http://i.imgur.com/wGFYE6Am.jpg";
-	$scope.adpGallery08Title = "Panel 3.1: Deck promotional poster development.";
-
-	$scope.adpGallery09 = "http://i.imgur.com/giFgQun.jpg";
-	$scope.adpGallery09Thumb = "http://i.imgur.com/giFgQunm.jpg";
-	$scope.adpGallery09Title = "Panel 3.2: Final promotional poster.";
-
-	$scope.adpGallery10 = "http://i.imgur.com/kza0iGx.jpg";
-	$scope.adpGallery10Thumb = "http://i.imgur.com/kza0iGxm.jpg";
-	$scope.adpGallery10Title = "Panel 3.3: Event promotional poster development.";
-
-	$scope.adpGallery11 = "http://i.imgur.com/vGncRk3.jpg";
-	$scope.adpGallery11Thumb = "http://i.imgur.com/vGncRk3m.jpg";
-	$scope.adpGallery11Title = "Panel 3.4: Final event promotional poster.";
-
-	$scope.adpGallery12 = "http://i.imgur.com/UkJwc2M.jpg";
-	$scope.adpGallery12Thumb = "http://i.imgur.com/UkJwc2Mh.jpg";
-	$scope.adpGallery12Title = "Template folder layout.";
+	$scope.gallery = [
+		{
+			image: 'http://i.imgur.com/Z8gsseD.jpg',
+			thumb: 'http://i.imgur.com/Z8gsseDm.jpg',
+			title: 'Panel 1.1: Cover development.'
+		},
+		{
+			image: 'http://i.imgur.com/6PCy6NI.jpg',
+			thumb: 'http://i.imgur.com/6PCy6NIm.jpg',
+			title: 'Panel 1.2: Logo development.'
+		},
+		{
+			image: 'http://i.imgur.com/k907HbJ.jpg',
+			thumb: 'http://i.imgur.com/k907HbJm.jpg',
+			title: 'Panel 1.3: Cover development continued.'
+		},
+		{
+			image: 'http://i.imgur.com/rtnYwIu.jpg',
+			thumb: 'http://i.imgur.com/rtnYwIum.jpg',
+			title: 'Panel 1.4: Final cover.'
+		},
+		{
+			image: 'http://i.imgur.com/PgI8ve2.jpg',
+			thumb: 'http://i.imgur.com/PgI8ve2m.jpg',
+			title: 'Panel 2.1: Deck, wheel & double page spread development.'
+		},
+		{
+			image: 'http://i.imgur.com/QOMYBJq.jpg',
+			thumb: 'http://i.imgur.com/QOMYBJqm.jpg',
+			title: 'Panel 2.2: Contents page development.'
+		},
+		{
+			image: 'http://i.imgur.com/4prO65I.jpg',
+			thumb: 'http://i.imgur.com/4prO65Im.jpg',
+			title: 'Panel 2.3: Double page spread & gallery development.'
+		},
+		{
+			image: 'http://i.imgur.com/v9nT2Re.jpg',
+			thumb: 'http://i.imgur.com/v9nT2Rem.jpg',
+			title: 'Panel 2.4: Final double page spread & gallery.'
+		},
+		{
+			image: 'http://i.imgur.com/wGFYE6A.jpg',
+			thumb: 'http://i.imgur.com/wGFYE6Am.jpg',
+			title: 'Panel 3.1: Deck promotional poster development.'
+		},
+		{
+			image: 'http://i.imgur.com/giFgQun.jpg',
+			thumb: 'http://i.imgur.com/giFgQunm.jpg',
+			title: 'Panel 3.2: Final promotional poster.'
+		},
+		{
+			image: 'http://i.imgur.com/kza0iGx.jpg',
+			thumb: 'http://i.imgur.com/kza0iGxm.jpg',
+			title: 'Panel 3.3: Event promotional poster development.'
+		},
+		{
+			image: 'http://i.imgur.com/vGncRk3.jpg',
+			thumb: 'http://i.imgur.com/vGncRk3m.jpg',
+			title: 'Panel 3.4: Final event promotional poster.'
+		}
+	];
 });
 
 ceoApp.controller('maController', function($scope) {
@@ -379,5 +414,4 @@ ceoApp.controller('maController', function($scope) {
 			title: '~2009 - Photoshop CS4.'
 		}
 	];
-	
 });
