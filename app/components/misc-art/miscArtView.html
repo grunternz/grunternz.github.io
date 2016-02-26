@@ -1,0 +1,24 @@
+<div class="jumbotron">
+	<div ng-include src="'app/shared/pager/pagerView.html'">
+	</div>
+
+	<p class="date">2009 to present</p>
+	<h1 class="headline">Miscellaneous Art</h1>
+	<p class="tag">Chronologically listed, with the newest works at the start.</p>
+	<hr>
+
+	<div class="container">
+		<div class="row list-undecorated">
+			<div class="col-xs-6 col-md-4" ng-repeat="art in gallery">
+				<a class="example-image-link" href="{{ art.image }}" data-lightbox="misc-art" data-title="{{ art.title }}"><img class="img-responsive example-image" ng-src="{{ art.thumb }}"/></a>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> Imagination is more important than knowledge. For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and understand. <sup><i class="fa fa-quote-right"></i></sup> — Albert Einstein</p>
+	
+	<div ng-include src="'app/shared/pager/pagerView.html'">
+	</div>
+	
+</div>

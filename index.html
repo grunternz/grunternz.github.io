@@ -14,25 +14,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Lightbox CSS -->
-    <link href="css/lightbox.css" rel="stylesheet">
+    <link  rel="stylesheet" href="assets/css/lightbox.css">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata:700">
 </head>
 
 <body data-ng-controller="workController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -126,32 +118,45 @@
     <footer>
         <div class="container text-center">
             <p class="white">Copyright &copy; Colin O'Brien 2016</p>
-            <a href="http://www.w3.org/TR/html/" target="_blank"><img class="w3chtml5" src="img/icons/HTML5_Badge_64.png" width="64" height="64" alt="HTML5 Powered and Validated" title="HTML5 Powered and Validated"></a>
-            <a href="http://www.w3schools.com/css/css3_intro.asp" target="_blank"><img class="w3chtml5" src="img/icons/CSS3_Badge_64.png" width="64" height="64" alt="Styled with CSS3" title="Styled with CSS3"></a>
-            <a href="https://angularjs.org/" target="_blank"><img class="w3chtml5" src="img/icons/AngularJS_Badge_64.png" width="64" height="64" alt="Built with AngularJS" title="Built with AngularJS"></a>
+            <a href="http://www.w3.org/TR/html/" target="_blank"><img class="w3chtml5" src="assets/img/icons/HTML5_Badge_64.png" width="64" height="64" alt="HTML5 Powered and Validated" title="HTML5 Powered and Validated"></a>
+            <a href="http://www.w3schools.com/css/css3_intro.asp" target="_blank"><img class="w3chtml5" src="assets/img/icons/CSS3_Badge_64.png" width="64" height="64" alt="Styled with CSS3" title="Styled with CSS3"></a>
+            <a href="https://angularjs.org/" target="_blank"><img class="w3chtml5" src="assets/img/icons/AngularJS_Badge_64.png" width="64" height="64" alt="Built with AngularJS" title="Built with AngularJS"></a>
         </div>
     </footer>
 
     <!-- Scripts -->
     <!-- JQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="assets/libs/jquery.js"></script>
+    <script src="assets/libs/jquery.easing.min.js"></script>
+    <script src="assets/libs/jquery.scrollTo.min.js"></script>
 
     <!-- Lightbox -->
-    <script src="js/lightbox.min.js"></script>
+    <script src="assets/libs/lightbox.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/libs/bootstrap.min.js"></script>
     
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-sanitize.js"></script>
-    <script src="js/angular-gist-embed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-sanitize.js"></script>
 
-    <!-- Custom Scripts -->
-    <script src="js/index.js"></script>
-    <script src="js/script.js"></script>
+    <script src="app/ceoApp.module.js"></script>
+    <script src="app/components/work/workController.js"></script>
+    <script src="app/components/android-development/androidDevelopmentController.js"></script>
+    <script src="app/components/art-design-portfolio/artDesignPortfolioController.js"></script>
+    <script src="app/components/game-art/gameArtController.js"></script>
+    <script src="app/components/misc-art/miscArtController.js"></script>
+    <script src="app/components/ray-tracing/rayTracingController.js"></script>
+    <script src="app/components/seng-group-project/sengGroupProjectController.js"></script>
+    <script src="app/components/ux-group-project/uxGroupProjectController.js"></script>
+    <script src="app/ceoApp.routes.js"></script>
+
+    <!-- Gist Embed -->
+    <script src="assets/libs/angular-gist-embed.js"></script>
+
+    <!-- Index -->
+    <script src="assets/js/index.js"></script>
+
 </body>
 </html>

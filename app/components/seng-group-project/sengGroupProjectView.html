@@ -1,0 +1,72 @@
+<div class="jumbotron">
+	<div ng-include src="'app/shared/pager/pagerView.html'">
+	</div>
+
+	<p class="date">SENG302: Software Engineering Group Project, Entire year, 2014</p>
+	<h1 class="headline">Software Engineering Group Project</h1>
+	<p class="tag">A self-oriented analysis of my contributions to the group project.</p>
+	<hr>
+
+	<h2>Goal</h2>
+	<p class="article">As part of a team of six, we were tasked with creating a Java application over the course of two semesters that would aid writers and the like in their creative process.</p>
+
+	<h2>Process</h2>
+	<p class="article">Thrown into the deep end from the start, we were expected to use an agile development cycle spanning six sprints of varying lengths throughout the course of two semesters; breaks included. We were assigned with a pre-determined list of features and requirements that our product owner regularly groomed and adjusted according to his tastes, desires and our feedback as developers. Grooming usually occurred before each sprint planning meeting however sometimes it was conducted in conjunction with the planning meetings, especially earlier on as we were still learning the process. This allowed for a greater level of communication as both parties could weigh in on any issues at the same time. Every team member was expected to and held accountable for keeping track of their time spent on various stories and tasks. We made use of the open source Agilefant platform to not only document our time spent, but also break down stories into smaller more specific and manageable tasks while also tracking our overall progression. Stand-up meetings were expected of us and as such a scrum master was to be a stand-in on half of the required meetings per week, providing their advice while also helping remove any hindrances, and diffusing tension within the group. At the end of every sprint, we stood in front of the other groups and gave a small presentation and demo of what we worked on and achieved up to that point.</p>
+
+	<h2>Contributions</h2>
+	<h3>Sprint One</h3>
+	<p class="article">In our initial sprint we worked together to get the core framework of the application up and running before splitting off into smaller sub-groups to complete various tasks. My focus was getting rudimentary undo redo functionality working as it was a functional requirement for the project. In order to achieve this I made use of the memento pattern wherein the state of the application is dereferenced, serialised and stored on a stack whenever an undoable action occurs. The stack is then methodically manipulated to achieve the desired undo redo functionality. <em>We were the only group with fully working undo redo functionality for the first two sprints.</em></p>
+	<p class="article">The module I wrote consisted of three main component parts; 
+	<ul class="list-line-height list-undecorated">
+		<li><b>Caretaker:</b> Manages a collection of previous Memento versions.</li>
+		<li><b>Originator:</b> Creates, assigns to, gets and sets Mementos.</li>
+		<li><b>Memento:</b> Object to be stored in difference states.</li>
+	</ul></p>
+
+	<h3>Sprint Two</h3>
+	<p class="article">The importance of staying on top of our unit testing became more apparent as we entered into sprint two. We knew that we lacked tests coming out of sprint one, and it only became more apparent after receiving feedback. I took it upon myself to touch-up some loose ends by tidying up the undo redo module; fleshing it out with complete junit documentation and tests. When I wrote the module I was very particular with keeping it confined and separate from the rest of the application. This made writing the tests very straight forward, as the scope was clear and confined. For the remainder of this very short sprint, I worked in conjunction with another team member on the gui side of things to get key-stroke accelerators and menu mnemonics set up—we were expected to keep the program in a shippable state at the end of each sprint, so our user experience had to be kept to a certain standard. After this, I took a brief look into getting FEST (a form of automated user interface testing) working for future sprints, as we were not only expected to have proof of unit testing but also use-case testing.
+
+	<h3>Sprint Three</h3>
+	<p class="article">As our code base grew larger and we added more and more functionality to the application, we began to realise how difficult it was working with such a limited set of user interface components. After seeing other teams adopt certain libraries for extending the swing interface, I managed to convince the remaining reluctant team members to allow us to slowly phase in the Web Look and Feel library. This library contains a myriad of useful components that we needed urgently, and in the future. I worked on slowly phasing the standard swing components out on our pre-existing user interface. After the majority of this was done, I researched into comparators in order to get our list displays ordering according to specific criteria. As the sprint drew to an end, the remainder of my time and effort was spent in an attempt to track down one elusive bug in particular that was heavily affecting the flow of our application; in certain situations</p>
+
+	<h3>Sprint Four</h3>
+	<p class="article">There was quite a lot of new and interesting functionality being introduced this sprint, including a status bar story I had proposed to the product owner. The story was to his liking and was to be adopted after I fleshed out some acceptance criteria for it. The other significant story was that of the recycling bin. Letting our users manipulate and delete their plot elements wasn't enough, we had to maintain discarded items behind the scenes should they ever want to retrieve them. I worked in close conjunction with one other team member over the course of countless late nights in the computer lab at university. We came up with an elegant solution for the recycling bin and status bar that tied in beautifully with the existing undo redo functionality after only a few minor adjustments to the module. Whenever an undoable action was carried out, we specified what type of action was carried out by the use of an external enumerable. This information was stored within the Memento that was stored on the undo redo stack. Having this information readily available made it a breeze to display in the status bar, giving the user immediate feedback on what was going on as they traversed the undo redo stack. The status bar was to provide feedback application wide, not just for undo redo, so naturally we worked on expanding it further to account for all actions we saw fit, including any negative outcomes should they ever arise. We also introduced revert functionality, allowing the user to revert back to their last saved state. This was very straight forward, and only required a mere pointer to keep track of their last saved state on the undo redo stack.</p>
+
+	<h3>Sprint Five</h3>
+	<p class="article">This sprint was our longest and as such by far the largest in terms of required effort. We were wading into sea of unknown as we finally took on the graphical display story. This story required us to visualise sequences of plot elements; we were to create a visual editor of sorts where the user could not only visualise, but also create, delete and modify sequences. While half the team worked on the backend for sequences, myself and two others started researching and experimenting with creating a graphical perspective. After a feeble attempt at writing our own tools, I had success with finding a third party graphing library known as JGraphX which could save a lot of time. There wasn't much documentation available but once we got the initial learning out of the way we had a rudimentary version up and running in no time. We then split off into improving it in various ways. My focus thereafter was on writing a layout manager so the user could quickly arrange their sequences according to a predefined criteria; horizontally, vertically and a line-wrapped hybrid of the two. I also took to implementing zooming functionality, as well as getting the toolbar in the graphical perspective up to the standard of the one in our textual perspective.</p>
+
+	<h3>Sprint Six</h3>
+	<p class="article">At long last, our final sprint. By this point we were truly exhausted; with assignment deadlines approaching from other courses and exams in the not too distant future, this sprint was sure to fly right by. There was so much work to be done. Not only did we have to tie up all the loose ends within the program itself, and squash as many bugs as possible <em>without</em> introducing more, we also had to update our documentation and test cases; so that's exactly what I dedicated my time to, as did the rest of the team. We didn't want to take on any stories that would introduce new functionality as we already had our work cut out for us. Towards the end of the sprint, I got a small case of ocd with the toolbar icons my team members were using as there was no uniformity; it looked like a circus. I quickly overhauled the icons so they all fit together, creating my own icons where necessary. We got there in the end, and the presentations everyone gave in the final show were very entertaining!</p>
+
+	<h2>Reflection</h2>
+	<p class="article">Initially I felt very weary regarding this course as I didn't know what to expect; it had an entirely new and foreign format in comparison to other courses I had experienced. Furthermore, I was grouped with five other people who I had just met. I didn't know of their ability or demeanor going into it. Having said all that, and having experienced all the ups and downs throughout the course I would still recommend it. The learning is self driven as the lecturers and product owners don't interfere with your implementations. We were given direction, and then sent on our way with frequent nudges to keep us from falling too far behind—and every team bit off more than they could chew at some point or another. The course made me a better developer, especially in regards to communicating and working in a team environment.</p>
+
+	<p class="article">If I had the opportunity to do anything differently, I would've liked to expand on the undo redo functionality to make use of a more robust and manageable command pattern. While the memento pattern served our requirements nicely, I knew how inefficient it would be as our code base grew. We went forward with it anyway, because of our constraints; we needed it working by the end of the first sprint! Some other teams made use of the command pattern, yet most didn't have any undo redo functionality until sprint three on average. One other thing that would have saved our team a lot of time and debate, would have been some form of coding style guideline that we all would adhere to. Furthermore I think we should have been more strict with our acceptance criteria for marking a task off as "complete".</p>
+
+	<h2>Gallery</h2>
+	<div class="container">
+		<ul class="row list-undecorated">
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" ng-repeat="image in gallery">
+				<a class="example-image-link" href="{{ image.image }}" data-lightbox="seng-group-project" data-title="{{ image.title }}"><img class="img-responsive example-image" ng-src="{{ image.thumb }}"/></a>
+			</li>
+		</ul>
+	</div>
+
+	
+
+	<h2>Resources and Acknowledgements</h2>
+	<p class="article">
+		<ul class="list-line-height list-undecorated">
+			<li><a href="http://agilefant.com/" target="_blank">Agilefant</a></li>
+			<li><a href="http://weblookandfeel.com/" target="_blank">Web Look and Feel</a></li>
+			<li><a href="https://github.com/jgraph/jgraphx" target="_blank">JGraphX</a></li>
+		</ul>
+	</p>
+	<p class="article">I'd like to thank all the tutors for putting up with us throughout the course; through all the ups and downs. It was a great learning experience!</p>
+
+	<hr>
+	<p class="tag"><sup><i class="fa fa-quote-left"></i></sup> First, solve the problem. Then, write the code. <sup><i class="fa fa-quote-right"></i></sup> — John Johnson</p>
+
+	<div ng-include src="'app/shared/pager/pagerView.html'">
+	</div>
+</div>
